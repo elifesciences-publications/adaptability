@@ -1,0 +1,15 @@
+#Trait: Delta fitness in SC at 37C
+#Term (qtl marker location),term number,Additional variance explained,Model Coefficient,F statistic
+#intercept,0,NA,0.127602183831,NA
+#initial fitness,1,nan,-0.698666778523,NA
+Kre33 (3777),3777,2,0.0198494214367,-0.0383175037329,32.2628613564
+epistatic with Kre33,3976,4,0.0206289753234,-0.0527254994423,32.2643610976
+epistatic with Kre33,3802,6,0.0144169485034,-0.0457181007124,21.6964685726
+#Trait: Delta fitness in YPD at 30C
+#Term (qtl marker location),term number,Additional variance explained,Model Coefficient,F statistic
+#intercept,0,NA,0.0545449441092,NA
+#initial fitness,1,0.416856309153,-0.634543019008,NA
+Kre33 (3777),3777,2,0.00445323193445,-0.0242619315099,9.65733654583
+linear,3802,5,0.0311602916025,0.017051839785,66.7863899889
+linear,3097,7,0.0330612347734,0.0129641770591,65.9076729786
+linear,2931,15,0.0150429913949,0.00944916896827,27.915279073

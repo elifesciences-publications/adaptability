@@ -1,0 +1,992 @@
+LK2-A06_clone-1_ypd_AAGAGGCA-ATCGCGCC
+chrIII	 211178	 A	 T	BUD23	123.0	Non	Leucine-->Glutamine,1.0
+LK2-A06_clone-2_sc_TAAGGCGA-CTCTCTAT
+chrII	 228046	 C	 G	UTP20	137.0	Non	Aspartic	acid-->Glutamic	acid,1.0
+chrIV	 897685	 G	 C	ADR1	884.0	Non	Serine-->Threonine,1.0
+chrIV	 1060894	 A	 T	BFR2	423.0	Non	Aspartic	acid-->Valine,1.0
+chrVI	 241259	 T	 C	DUG1	60.0	Non	Aspartic	acid-->Glycine,1.0
+chrVIII	 275579	 T	 +1:G	STE12	469.0	Non	FS,1.0
+chrIX	 216843	 G	 T	SEC28	62.0	Non	Leucine-->Phenylalanine,1.0
+chrXIV	 375777	 A	 G	KRE33	153.0	Non	Lysine-->Glutamic	acid,1.0
+LK2-A06_clone-2_ypd_GTAGAGGA-ATCGCGCC
+chrIII	 161369	 T	 C	SLM5	285.0	Non	Aspartic	acid-->Glycine,1.0
+chrIII	 210800	 T	 C	BUD23	249.0	Non	Lysine-->Arginine,0.944444444444
+chrIV	 836180	 A	 G	Intergenic,0.916666666667
+chrVII	 782709	 G	 A	ENP2	315.0	Non	Valine-->Isoleucine,1.0
+LK2-A06_clone-3_sc_AAGAGGCA-CTCTCTAT
+chrIV	 651409	 T	 C	Intergenic,1.0
+chrIV	 651419	 A	 +3:GTT	Intergenic,1.0
+chrIV	 1061006	 G	 C	BFR2	460.0	Non	Lysine-->Asparagine,1.0
+chrIX	 311744	 C	 A	TIM44	194.0	Non	Histidine-->Asparagine,0.941176470588
+chrXIV	 732868	 A	 C	BIO5	146.0	Non	Tyrosine-->Aspartic	acid,1.0
+LK2-A06_clone-3_ypd_AAGAGGCA-TCGGTTAA
+chrVII	 782163	 T	 C	ENP2	133.0	Non	Tyrosine-->Histidine,1.0
+LK2-A06_clone-4_ypd_GTAGAGGA-TCGGTTAA
+chrIII	 195131	 G	 A	PHO87	685.0	Syn,0.55
+chrXIV	 376948	 C	 T	KRE33	543.0	Non	Serine-->Leucine,1.0
+chrXVI	 377487	 G	 T	RPS6A	170.0	Non	Alanine-->Aspartic	acid,1.0
+LK2-A10_clone-1_sc_CGTACTAG-CTCTCTAT
+chrIV	 321011	 A	 T	RXT3	181.0	Non	Leucine-->Stop,0.875
+chrVII	 782565	 G	 T	ENP2	267.0	Non	Aspartic	acid-->Tyrosine,1.0
+LK2-A10_clone-1_ypd_CGTACTAG-GCATCGTT
+chrIV	 1004838	 G	 T	MSW1	279.0	Non	Aspartic	acid-->Tyrosine,1.0
+chrV	 81350	 C	 G	Intergenic,1.0
+chrVII	 781806	 T	 C	ENP2	14.0	Non	Tyrosine-->Histidine,1.0
+chrX	 224805	 C	 G	Intergenic,1.0
+LK2-A10_clone-2_sc_TCCTGAGC-CTCTCTAT
+chrVII	 783019	 C	 A	ENP2	418.0	Non	Alanine-->Aspartic	acid,0.857142857143
+chrX	 338873	 C	 T	TDH1	201.0	Syn,0.521739130435
+chrXII	 179597	 G	 A	POM34	4.0	Non	Glutamine-->Stop,0.969696969697
+chrXIV	 397283	 C	 T	NMA111	867.0	Non	Glutamine-->Stop,0.933333333333
+LK2-A10_clone-2_ypd_TCCTGAGC-GCATCGTT
+chrVII	 935211	 T	 G	CRM1	891.0	Non	Tryptophan-->Glycine,0.933333333333
+chrXI	 24686	 G	 A	Intergenic,1.0
+chrXII	 613774	 T	 G	THI7	470.0	Non	Tyrosine-->Aspartic	acid,1.0
+chrXIII	 901451	 G	 A	Intergenic,0.666666666667
+LK2-A10_clone-3_sc_GGACTCCT-CTCTCTAT
+chrII	 522373	 G	 C	IRA1	1419.0	Non	Serine-->Stop,0.769230769231
+chrII	 525740	 C	 T	IRA1	297.0	Non	Alanine-->Threonine,0.636363636364
+chrVII	 782894	 G	 C	ENP2	376.0	Non	Arginine-->Serine,1.0
+chrXIII	 194372	 G	 A	CAT2	529.0	Non	Valine-->Isoleucine,0.736842105263
+LK2-A10_clone-3_ypd_GGACTCCT-GCATCGTT
+chrIII	 60346	 G	 A	GFD2	441.0	Non	Glutamic	acid-->Lysine,0.6
+chrVII	 782979	 T	 A	ENP2	405.0	Non	Phenylalanine-->Isoleucine,1.0
+chrXIV	 377115	 G	 A	KRE33	599.0	Non	Valine-->Isoleucine,0.833333333333
+LK2-A10_clone-4_sc_TAGGCATG-CTCTCTAT
+chrIV	 320925	 C	 A	RXT3	210.0	Non	Aspartic	acid-->Tyrosine,1.0
+chrVIII	 228086	 C	 T	RRP3	318.0	Non	Glutamic	acid-->Lysine,0.571428571429
+chrXIV	 375527	 C	 A	KRE33	69.0	Non	Histidine-->Glutamine,1.0
+chrXIV	 375529	 G	 T	KRE33	70.0	Non	Arginine-->Isoleucine,1.0
+LK2-A10_clone-4_ypd_TAGGCATG-GCATCGTT
+chrXIII	 507083	 G	 T	ASI1	584.0	Non	Arginine-->Leucine,0.952380952381
+chrXIV	 377920	 T	 G	KRE33	867.0	Non	Phenylalanine-->Cysteine,1.0
+LK2-A11_clone-1_ypd_CTCTCTAC-GCATCGTT
+chrIV	 1236691	 G	 C	YRA1	45.0	Non	Arginine-->Threonine,1.0
+chrIX	 267260	 G	 T	SYG1	188.0	Syn,1.0
+chrXV	 1014017	 G	 T	PDE2	269.0	Non	Histidine-->Asparagine,1.0
+LK2-A11_clone-2_sc_CAGAGAGG-CTCTCTAT
+chrIV	 693816	 G	 T	DPB4	78.0	Non	Alanine-->Serine,1.0
+chrXII	 1019338	 A	 C	SIR3	972.0	Non	Phenylalanine-->Valine,1.0
+chrXIII	 427334	 A	 G	NAM7	765.0	Non	Phenylalanine-->Serine,0.875
+chrXIV	 187850	 G	 A	Intergenic,1.0
+chrXV	 175775	 C	 G	IRA2	1569.0	Non	Serine-->Stop,1.0
+LK2-A11_clone-2_ypd_CAGAGAGG-GCATCGTT
+chrII	 26058	 G	 A	ECM21	748.0	Non	Proline-->Serine,0.978260869565
+chrIII	 211539	 G	 C	BUD23	3.0	Non	Arginine-->Glycine,1.0
+chrV	 205906	 C	 G	GCD11	219.0	Non	Alanine-->Glycine,0.986486486486
+chrVII	 361104	 G	 T	DBP3	252.0	Non	Aspartic	acid-->Glutamic	acid,1.0
+chrXV	 176725	 C	 T	IRA2	1886.0	Non	Glutamine-->Stop,1.0
+chrXVI	 586599	 G	 A	Intergenic,0.791666666667
+LK2-A11_clone-3_sc_GCTACGCT-CTCTCTAT
+chrII	 228105	 A	 G	UTP20	157.0	Non	Tyrosine-->Cysteine,1.0
+chrIII	 210472	 A	 -3:TTC	Intergenic,1.0
+chrIII	 254179	 C	 A	Intergenic,1.0
+chrXII	 278865	 T	 -1:G	YLR072W	2.0	Non	FS,0.555555555556
+chrXV	 808098	 T	 G	OSW1	276.0	Syn,1.0
+chrXVI	 290083	 G	 C	UME1	323.0	Non	Isoleucine-->Methionine,1.0
+LK2-A11_clone-3_ypd_GCTACGCT-GCATCGTT
+chrXII	 490501	 T	 C	RRT15	32.0	Syn,0.75
+LK2-A11_clone-4_sc_CGAGGCTG-CTCTCTAT
+chrIV	 1061002	 C	 T	BFR2	459.0	Non	Serine-->Phenylalanine,1.0
+LK2-A11_clone-4_ypd_CGAGGCTG-GCATCGTT
+chrII	 526388	 G	 A	IRA1	81.0	Non	Glutamine-->Stop,1.0
+chrV	 225514	 A	 G	Intergenic,0.857142857143
+chrVII	 268943	 A	 T	RSM23	45.0	Non	Tyrosine-->Asparagine,0.857142857143
+chrIX	 314914	 C	 G	Intergenic,0.857142857143
+chrX	 368851	 T	 -1:C	NUP192	1650.0	Non	FS,0.923076923077
+chrXIV	 376797	 G	 C	KRE33	493.0	Non	Aspartic	acid-->Histidine,0.666666666667
+LK2-A12_clone-1_sc_AAGAGGCA-AAGGAGTA
+chrI	 58	 A	 C	Intergenic,1.0
+chrVII	 781811	 G	 T	ENP2	15.0	Non	Glutamine-->Histidine,1.0
+chrXV	 380035	 T	 G	BUB3	85.0	Non	Aspartic	acid-->Glutamic	acid,1.0
+LK2-A12_clone-1_ypd_AAGAGGCA-GCATCGTT
+chrIV	 804840	 T	 C	Intergenic,1.0
+LK2-A12_clone-2_sc_AGGCAGAA-CTCTCTAT
+chrXIV	 377206	 G	 C	KRE33	629.0	Non	Serine-->Threonine,1.0
+chrXVI	 624399	 G	 C	Intergenic,1.0
+chrXVI	 887280	 C	 G	VPS4	186.0	Syn,1.0
+LK2-A12_clone-2_ypd_GTAGAGGA-GCATCGTT
+chrXV	 343014	 G	 A	YOR008C-A	23.0	Non	Proline-->Leucine,0.8
+LK2-A12_clone-3_ypd_TAAGGCGA-AGGTTGAC
+chrII	 1952	 A	 G	YBL113C	236.0	Non	Valine-->Alanine,1.0
+chrII	 235080	 G	 T	UTP20	2482.0	Non	Glycine-->Valine,0.923076923077
+chrV	 431815	 C	 T	Intergenic,1.0
+chrX	 354542	 T	 G	Intergenic,0.583333333333
+chrX	 354546	 G	 A	Intergenic,0.583333333333
+LK2-A12_clone-4_ypd_CGTACTAG-AGGTTGAC
+chrII	 467503	 G	 A	RAD16	86.0	Non	Aspartic	acid-->Asparagine,1.0
+chrXII	 917327	 G	 T	SKI2	565.0	Non	Arginine-->Serine,1.0
+chrXVI	 141585	 C	 G	BMS1	529.0	Non	Tryptophan-->Cysteine,1.0
+LK2-B04_clone-1_sc_AGGCAGAA-TATCCTCT
+chrII	 526654	 T	 C	Intergenic,0.882352941176
+chrXI	 260431	 C	 A	Intergenic,0.566666666667
+LK2-B04_clone-1_ypd_AGGCAGAA-AGGTTGAC
+chrXI	 620874	 G	 C	MLP1	357.0	Non	Cysteine-->Serine,0.9
+chrXIII	 443934	 G	 A	VBA1	390.0	Non	Proline-->Leucine,1.0
+LK2-B04_clone-2_sc_TCCTGAGC-TATCCTCT
+chrI	 40736	 C	 G	GPB2	493.0	Non	Serine-->Stop,0.545454545455
+chrVI	 193144	 T	 C	YFR020W	136.0	Syn,1.0
+chrXVI	 907180	 G	 A	Intergenic,0.56
+LK2-B04_clone-2_ypd_TCCTGAGC-AGGTTGAC
+chrXII	 950495	 A	 G	Intergenic,1.0
+LK2-B04_clone-3_sc_GGACTCCT-TATCCTCT
+chrI	 206410	 G	 C	FLO1	1003.0	Non	Tryptophan-->Serine,0.593220338983
+chrIV	 377088	 A	 G	SIR2	453.0	Non	Phenylalanine-->Serine,1.0
+chrXIII	 600321	 C	 T	ALD3	184.0	Syn,1.0
+chrXVI	 177295	 G	 A	APL5	358.0	Non	Arginine-->Histidine,1.0
+LK2-B04_clone-3_ypd_GGACTCCT-AGGTTGAC
+chrII	 190254	 C	 T	PEP1	444.0	Non	Aspartic	acid-->Asparagine,0.761904761905
+LK2-B04_clone-4_sc_TAGGCATG-TATCCTCT
+chrI	 39960	 G	 +1:A	GPB2	234.0	Non	FS,0.6875
+chrIV	 918119	 G	 +1:A	SIR4	183.0	Non	FS,0.76
+LK2-B04_clone-4_ypd_TAGGCATG-AGGTTGAC
+chrIV	 940338	 G	 T	SEC26	160.0	Non	Alanine-->Glutamic	acid,0.95
+chrX	 285187	 C	 T	ARP4	29.0	Non	Glycine-->Serine,0.652173913043
+LK2-B05_clone-1_ypd_CTCTCTAC-AGGTTGAC
+LK2-B05_clone-2_sc_CAGAGAGG-TATCCTCT
+LK2-B05_clone-2_ypd_CAGAGAGG-AGGTTGAC
+chrIII	 270650	 A	 C	FIG2	1073.0	Non	Serine-->Arginine,0.533333333333
+LK2-B05_clone-3_sc_GCTACGCT-TATCCTCT
+chrXIV	 165290	 A	 G	FOL1	223.0	Non	Histidine-->Arginine,1.0
+LK2-B05_clone-3_ypd_GCTACGCT-AGGTTGAC
+LK2-B05_clone-4_sc_CGAGGCTG-TATCCTCT
+chrIV	 645465	 A	 G	Intergenic,0.857142857143
+chrIV	 645484	 T	 G	Intergenic,0.9
+LK2-B05_clone-4_ypd_CGAGGCTG-AGGTTGAC
+chrIV	 226205	 G	 T	CDC53	634.0	Non	Leucine-->Phenylalanine,1.0
+LK2-B07_clone-1_sc_AAGAGGCA-ACTGCATA
+LK2-B07_clone-1_ypd_AAGAGGCA-AGGTTGAC
+LK2-B07_clone-2_sc_GTAGAGGA-ACTGCATA
+chrIII	 83153	 C	 G	Intergenic,0.625
+chrXV	 176713	 G	 T	IRA2	1882.0	Non	Alanine-->Serine,0.833333333333
+LK2-B07_clone-2_ypd_GTAGAGGA-AGGTTGAC
+LK2-B07_clone-3_sc_TAAGGCGA-AGAGTAGA
+chrII	 594590	 G	 A	SMP1	92.0	Non	Proline-->Leucine,0.8
+chrVII	 672838	 G	 A	VAS1	218.0	Non	Glycine-->Aspartic	acid,0.611111111111
+chrIX	 303766	 G	 T	EMC5	113.0	Syn,0.6
+chrXII	 221519	 C	 T	Intergenic,0.647058823529
+chrXV	 381557	 C	 A	STI1	169.0	Non	Glutamine-->Lysine,0.538461538462
+LK2-B07_clone-3_ypd_TAAGGCGA-TGAAACTG
+LK2-B07_clone-4_sc_CGTACTAG-AGAGTAGA
+LK2-B07_clone-4_ypd_CGTACTAG-TGAAACTG
+LK2-C05_clone-1_sc_AGGCAGAA-AGAGTAGA
+chrII	 526886	 T	 C	Intergenic,1.0
+chrIV	 1205880	 A	 T	ESF1	168.0	Non	Phenylalanine-->Leucine,1.0
+chrVI	 37289	 G	 T	SWP82	163.0	Non	Glutamic	acid-->Stop,1.0
+chrVII	 781935	 G	 A	ENP2	57.0	Non	Glutamic	acid-->Lysine,1.0
+LK2-C05_clone-1_ypd_AGGCAGAA-TGAAACTG
+chrXIV	 376848	 C	 T	KRE33	510.0	Non	Proline-->Serine,0.958333333333
+LK2-C05_clone-3_sc_GGACTCCT-AGAGTAGA
+chrII	 524717	 T	 A	IRA1	638.0	Non	Lysine-->Stop,1.0
+chrIII	 252289	 G	 A	PAT1	114.0	Non	Proline-->Serine,1.0
+chrIV	 168732	 C	 A	ENT1	340.0	Non	Proline-->Glutamine,1.0
+chrVII	 736273	 T	 A	Intergenic,0.583333333333
+chrIX	 73162	 C	 T	SLN1	98.0	Non	Alanine-->Threonine,1.0
+chrIX	 182525	 G	 A	BMT5	201.0	Syn,1.0
+chrXI	 565831	 G	 A	PAM17	21.0	Non	Threonine-->Isoleucine,1.0
+chrXII	 279273	 C	 T	YLR072W	138.0	Syn,1.0
+chrXIII	 695954	 T	 G	SCJ1	202.0	Non	Isoleucine-->Serine,1.0
+chrXIV	 378276	 C	 G	KRE33	986.0	Non	Leucine-->Valine,1.0
+chrXV	 1042723	 C	 G	GDH1	107.0	Non	Glycine-->Alanine,1.0
+chrXV	 1084568	 T	 G	Intergenic,0.666666666667
+chrXVI	 6577	 A	 C	Intergenic,0.666666666667
+chrXVI	 358593	 C	 A	FMP30	272.0	Non	Aspartic	acid-->Tyrosine,1.0
+chrXVI	 804080	 G	 A	RRP9	574.0	Syn,1.0
+LK2-C05_clone-3_ypd_GGACTCCT-TGAAACTG
+chrXIV	 375696	 G	 A	KRE33	126.0	Non	Aspartic	acid-->Asparagine,1.0
+LK2-C05_clone-4_ypd_TAGGCATG-TGAAACTG
+chrX	 339527	 T	 G	Intergenic,1.0
+LK2-C06_clone-1_sc_CTCTCTAC-AGAGTAGA
+LK2-C06_clone-1_ypd_CTCTCTAC-TGAAACTG
+chrII	 705404	 T	 C	Intergenic,1.0
+LK2-C06_clone-2_sc_CAGAGAGG-AGAGTAGA
+chrXVI	 757662	 C	 A	RGC1	929.0	Non	Serine-->Stop,1.0
+LK2-C06_clone-2_ypd_CAGAGAGG-TGAAACTG
+chrII	 522632	 C	 +1:G	IRA1	1333.0	Non	FS,0.55
+chrII	 522640	 C	 T	IRA1	1330.0	Non	Serine-->Asparagine,0.7
+chrXII	 287865	 G	 A	Intergenic,0.6
+LK2-C06_clone-3_sc_GCTACGCT-AGAGTAGA
+LK2-C06_clone-3_ypd_GCTACGCT-TGAAACTG
+LK2-C06_clone-4_sc_CGAGGCTG-AGAGTAGA
+chrVII	 677213	 A	 C	TPC1	198.0	Non	Glutamic	acid-->Alanine,1.0
+LK2-C08_clone-1_sc_AAGAGGCA-GTAAGGAG
+chrXV	 1033444	 C	 A	GPB1	247.0	Non	Glutamic	acid-->Stop,1.0
+LK2-C08_clone-1_ypd_AAGAGGCA-TGAAACTG
+LK2-C08_clone-2_sc_GTAGAGGA-GTAAGGAG
+chrXIV	 300565	 G	 A	RHO5	29.0	Non	Proline-->Serine,0.677419354839
+LK2-C08_clone-2_ypd_GTAGAGGA-TGAAACTG
+chrVI	 5304	 C	 T	YFL063W	80.0	Non	Proline-->Leucine,0.727272727273
+LK2-C08_clone-3_sc_TAAGGCGA-GTAAGGAG
+LK2-C08_clone-3_ypd_TAAGGCGA-CAATCACA
+chrII	 434880	 A	 G	RXT2	273.0	Syn,0.953488372093
+chrVII	 786971	 C	 T	Intergenic,1.0
+LK2-C08_clone-4_sc_CGTACTAG-GTAAGGAG
+LK2-C08_clone-4_ypd_CGTACTAG-CAATCACA
+chrX	 92116	 G	 A	SWI3	805.0	Syn,1.0
+LK2-C09_clone-1_sc_AGGCAGAA-GTAAGGAG
+chrII	 228115	 G	 T	UTP20	160.0	Non	Lysine-->Asparagine,0.8
+chrXV	 1021040	 C	 T	PIP2	725.0	Non	Glutamic	acid-->Lysine,0.95652173913
+LK2-C09_clone-1_ypd_AGGCAGAA-CAATCACA
+chrII	 230396	 G	 T	UTP20	921.0	Non	Valine-->Phenylalanine,1.0
+chrXII	 854203	 G	 T	GRX8	48.0	Non	Aspartic	acid-->Tyrosine,1.0
+LK2-C09_clone-2_sc_TCCTGAGC-GTAAGGAG
+chrII	 230360	 G	 T	UTP20	909.0	Non	Glycine-->Tryptophan,1.0
+chrIV	 736388	 C	 G	DOP1	1204.0	Non	Valine-->Leucine,1.0
+chrVII	 83775	 G	 T	MDM34	161.0	Syn,1.0
+chrX	 291187	 C	 G	Intergenic,0.710526315789
+LK2-C09_clone-2_ypd_TCCTGAGC-CAATCACA
+chrXII	 950663	 T	 G	Intergenic,1.0
+LK2-C09_clone-3_sc_GGACTCCT-GTAAGGAG
+chrIV	 1061006	 G	 C	BFR2	460.0	Non	Lysine-->Asparagine,1.0
+chrXI	 368885	 C	 A	RGT1	1094.0	Non	Threonine-->Lysine,0.986486486486
+chrXIV	 216385	 C	 T	PDR16	220.0	Non	Glycine-->Serine,0.983333333333
+chrXIV	 377125	 C	 T	KRE33	602.0	Non	Serine-->Leucine,1.0
+chrXVI	 393359	 G	 T	SEC16	2098.0	Non	Glycine-->Valine,0.984375
+LK2-C09_clone-3_ypd_GGACTCCT-CAATCACA
+chrXIII	 704896	 C	 T	TRS130	664.0	Syn,1.0
+chrXVI	 141928	 C	 T	BMS1	415.0	Non	Glycine-->Aspartic	acid,1.0
+LK2-C09_clone-4_ypd_TAGGCATG-CAATCACA
+chrIV	 1061004	 A	 C	BFR2	460.0	Non	Lysine-->Glutamine,1.0
+chrXIV	 321209	 G	 A	SKO1	51.0	Non	Arginine-->Stop,1.0
+chrXVI	 215729	 A	 T	Intergenic,0.720930232558
+LK2-D03_clone-1_sc_CTCTCTAC-GTAAGGAG
+chrX	 289785	 A	 G	Intergenic,1.0
+chrXV	 209270	 G	 C	CRT10	332.0	Syn,1.0
+LK2-D03_clone-1_ypd_CTCTCTAC-CAATCACA
+LK2-D03_clone-2_sc_CAGAGAGG-GTAAGGAG
+LK2-D03_clone-2_ypd_CAGAGAGG-CAATCACA
+LK2-D03_clone-3_sc_GCTACGCT-GTAAGGAG
+LK2-D03_clone-3_ypd_GCTACGCT-CAATCACA
+chrVII	 915355	 G	 T	ZPR1	39.0	Non	Alanine-->Serine,0.888888888889
+LK2-D03_clone-4_sc_CGAGGCTG-GTAAGGAG
+chrXI	 232916	 C	 T	HAP4	230.0	Syn,0.631578947368
+LK2-D03_clone-4_ypd_CGAGGCTG-CAATCACA
+LK2-D04_clone-1_sc_AAGAGGCA-AGAGTAGA
+chrVII	 323004	 C	 T	SRM1	408.0	Non	Alanine-->Valine,0.875
+chrX	 675311	 A	 G	SGM1	181.0	Non	Leucine-->Serine,1.0
+chrXV	 45449	 C	 G	DCP1	171.0	Non	Alanine-->Glycine,1.0
+LK2-D04_clone-1_ypd_AAGAGGCA-CAATCACA
+chrVII	 295905	 T	 C	Intergenic,1.0
+LK2-D04_clone-2_ypd_GTAGAGGA-CAATCACA
+chrXV	 982087	 C	 T	YOR345C	26.0	Non	Valine-->Isoleucine,1.0
+LK2-D04_clone-3_sc_TAAGGCGA-ACTGCATA
+chrXII	 691406	 C	 A	Intergenic,0.545454545455
+LK2-D04_clone-3_ypd_TAAGGCGA-ACATGCAA
+LK2-D04_clone-4_sc_CGTACTAG-ACTGCATA
+chrVII	 1078517	 C	 A	Intergenic,0.777777777778
+chrXII	 446502	 T	 C	ACS2	358.0	Syn,0.615384615385
+LK2-D04_clone-4_ypd_CGTACTAG-ACATGCAA
+chrX	 598771	 A	 C	BUD4	13.0	Non	Lysine-->Glutamine,0.6
+LK2-D05_clone-1_sc_AGGCAGAA-ACTGCATA
+chrII	 662882	 G	 T	Intergenic,1.0
+chrV	 421557	 T	 C	COM2	297.0	Non	Aspartic	acid-->Glycine,0.684210526316
+chrVII	 781996	 A	 G	ENP2	77.0	Non	Tyrosine-->Cysteine,1.0
+chrVIII	 411511	 A	 T	LIN1	299.0	Non	Leucine-->Glutamine,1.0
+chrIX	 194560	 C	 T	ICE2	322.0	Syn,1.0
+chrX	 274873	 T	 A	ALY2	1044.0	Non	Serine-->Cysteine,1.0
+chrXIII	 603844	 C	 A	Intergenic,1.0
+chrXIII	 850962	 C	 A	HAS1	210.0	Non	Methionine-->Isoleucine,1.0
+chrXIV	 274745	 C	 T	YNL193W	126.0	Syn,0.565217391304
+LK2-D05_clone-1_ypd_AGGCAGAA-ACATGCAA
+chrIV	 1199022	 T	 A	Intergenic,1.0
+chrVII	 277403	 A	 G	Intergenic,1.0
+chrVII	 782712	 G	 C	ENP2	316.0	Non	Aspartic	acid-->Histidine,0.875
+chrXI	 504654	 A	 T	SPO14	581.0	Non	Isoleucine-->Asparagine,1.0
+chrXIII	 277313	 G	 T	Intergenic,0.571428571429
+chrXIII	 709354	 C	 A	ESC1	741.0	Non	Threonine-->Asparagine,1.0
+chrXIV	 296721	 C	 A	IPI3	303.0	Non	Valine-->Leucine,1.0
+chrXVI	 141921	 T	 A	BMS1	417.0	Non	Glutamine-->Histidine,1.0
+LK2-D05_clone-2_sc_TCCTGAGC-ACTGCATA
+chrII	 592216	 C	 A	RPS6B	67.0	Non	Leucine-->Phenylalanine,0.947368421053
+chrIV	 489140	 G	 C	Intergenic,1.0
+chrIV	 1061008	 G	 C	BFR2	461.0	Non	Glycine-->Alanine,1.0
+chrIX	 29514	 C	 A	SGD:S000001429	161.0	Syn,1.0
+chrIX	 230617	 G	 T	MAM33	152.0	Non	Asparagine-->Lysine,1.0
+chrX	 487905	 C	 A	GEA1	970.0	Non	Aspartic	acid-->Tyrosine,1.0
+chrXI	 128447	 C	 G	NNK1	325.0	Non	Glutamine-->Glutamic	acid,1.0
+chrXIV	 527036	 C	 A	VAC7	317.0	Non	Asparagine-->Lysine,1.0
+LK2-D05_clone-2_ypd_TCCTGAGC-ACATGCAA
+chrII	 257612	 C	 T	IPP1	122.0	Non	Valine-->Methionine,1.0
+chrX	 647165	 C	 T	YJR120W	14.0	Non	Proline-->Serine,1.0
+chrXIII	 529947	 C	 A	POM152	715.0	Non	Threonine-->Lysine,1.0
+LK2-D05_clone-3_sc_GGACTCCT-ACTGCATA
+chrIX	 373709	 C	 T	PRI1	200.0	Non	Aspartic	acid-->Asparagine,1.0
+chrXII	 1022241	 G	 -2:TT	SIR3	4.0	Non	FS,0.928571428571
+chrXV	 499654	 T	 G	YOR093C	933.0	Non	Leucine-->Phenylalanine,1.0
+LK2-D05_clone-3_ypd_GGACTCCT-ACATGCAA
+chrII	 524359	 A	 C	IRA1	757.0	Non	Leucine-->Stop,0.709677419355
+chrXIV	 377524	 A	 T	KRE33	735.0	Non	Lysine-->Isoleucine,1.0
+chrXVI	 942668	 T	 -1:G	Intergenic,0.666666666667
+LK2-D05_clone-4_sc_TAGGCATG-ACTGCATA
+chrVII	 284397	 C	 G	Intergenic,1.0
+chrVII	 781821	 A	 C	ENP2	19.0	Non	Threonine-->Proline,1.0
+chrXII	 810521	 C	 G	FKS1	175.0	Syn,1.0
+LK2-D05_clone-4_ypd_TAGGCATG-ACATGCAA
+chrXIII	 239811	 G	 T	PPZ1	576.0	Non	Arginine-->Serine,0.636363636364
+LK2-D07_clone-1_sc_CTCTCTAC-ACTGCATA
+chrIV	 812661	 C	 T	HMO1	184.0	Syn,0.96875
+chrIV	 1255757	 T	 C	UBA2	364.0	Non	Glutamine-->Arginine,1.0
+chrVI	 183020	 G	 A	Intergenic,1.0
+chrXVI	 377798	 C	 A	RPS6A	66.0	Non	Leucine-->Phenylalanine,0.954545454545
+LK2-D07_clone-1_ypd_CTCTCTAC-ACATGCAA
+chrIV	 658888	 G	 A	STE5	180.0	Non	Cysteine-->Tyrosine,0.6
+chrIV	 1255757	 T	 C	UBA2	364.0	Non	Glutamine-->Arginine,1.0
+chrXV	 1033259	 G	 T	GPB1	308.0	Syn,0.714285714286
+LK2-D07_clone-2_sc_CAGAGAGG-ACTGCATA
+LK2-D07_clone-2_ypd_CAGAGAGG-ACATGCAA
+chrXI	 642153	 G	 -1:A	SIR1	538.0	Non	FS,1.0
+LK2-D07_clone-3_sc_GCTACGCT-ACTGCATA
+chrV	 407878	 C	 A	DSE1	396.0	Non	Glycine-->Cysteine,1.0
+chrVII	 782704	 C	 T	ENP2	313.0	Non	Proline-->Leucine,1.0
+chrVII	 782924	 G	 T	ENP2	386.0	Non	Leucine-->Phenylalanine,1.0
+LK2-D07_clone-3_ypd_GCTACGCT-ACATGCAA
+chrX	 155605	 G	 T	GLG2	175.0	Non	Glutamine-->Lysine,0.526315789474
+chrXII	 356213	 A	 G	MDN1	2509.0	Non	Leucine-->Serine,1.0
+chrXIV	 376509	 G	 A	KRE33	397.0	Non	Valine-->Isoleucine,1.0
+LK2-D07_clone-4_sc_CGAGGCTG-ACTGCATA
+chrVII	 782692	 C	 A	ENP2	309.0	Non	Alanine-->Aspartic	acid,1.0
+chrVII	 782851	 A	 G	ENP2	362.0	Non	Glutamic	acid-->Glycine,0.75
+chrXI	 389538	 C	 T	GPX1	116.0	Non	Glycine-->Arginine,0.785714285714
+chrXII	 703958	 C	 T	YLR278C	23.0	Non	Alanine-->Threonine,0.9
+LK2-D07_clone-4_ypd_CGAGGCTG-ACATGCAA
+chrII	 341632	 C	 T	Intergenic,1.0
+chrIV	 1061018	 G	 C	BFR2	464.0	Non	Leucine-->Phenylalanine,0.8
+chrV	 363202	 A	 C	RPS8B	35.0	Non	Asparagine-->Histidine,0.533333333333
+chrVI	 269780	 A	 G	Intergenic,0.8
+chrXIII	 566979	 T	 -1:G	RIM13	402.0	Non	FS,1.0
+chrXIV	 586783	 A	 T	KSH1	13.0	Non	Valine-->Glutamic	acid,0.8
+chrXVI	 929266	 G	 C	Intergenic,0.714285714286
+LK2-D09_clone-1_sc_AAGAGGCA-TATCCTCT
+chrIV	 1061032	 A	 C	BFR2	469.0	Non	Glutamine-->Proline,1.0
+chrVII	 894479	 A	 T	Intergenic,1.0
+chrX	 359647	 G	 A	GYP6	10.0	Syn,0.604651162791
+chrXIII	 360308	 C	 T	SGD:S000004648	338.0	Syn,1.0
+LK2-D09_clone-1_ypd_AAGAGGCA-ACATGCAA
+chrV	 414656	 C	 T	LCP5	59.0	Non	Serine-->Leucine,1.0
+chrXV	 377526	 C	 G	AHC1	63.0	Non	Glutamic	acid-->Glutamine,1.0
+LK2-D09_clone-2_sc_GTAGAGGA-TATCCTCT
+chrII	 482085	 T	 A	GRS1	428.0	Non	Aspartic	acid-->Valine,0.5625
+chrVII	 782167	 C	 T	ENP2	134.0	Non	Threonine-->Isoleucine,0.590909090909
+chrXI	 507653	 A	 T	DAL80	252.0	Non	Glutamine-->Histidine,0.675675675676
+chrXII	 609439	 C	 A	EST1	29.0	Non	Arginine-->Methionine,0.605263157895
+chrXII	 749368	 C	 A	IMH1	801.0	Non	Arginine-->Leucine,0.55
+chrXIV	 375511	 T	 G	KRE33	64.0	Non	Leucine-->Arginine,1.0
+LK2-D09_clone-2_ypd_GTAGAGGA-ACATGCAA
+chrXIV	 377797	 C	 T	KRE33	826.0	Non	Threonine-->Methionine,0.647058823529
+LK2-D09_clone-3_sc_TAAGGCGA-AAGGAGTA
+chrVII	 782782	 A	 C	ENP2	339.0	Non	Histidine-->Proline,1.0
+chrXV	 693892	 T	 +1:A	ULS1	473.0	Non	FS,0.870967741935
+LK2-D09_clone-3_ypd_TAAGGCGA-ATCGCGCC
+chrXIV	 148408	 C	 G	POL2	66.0	Non	Alanine-->Glycine,1.0
+chrXIV	 374970	 T	 A	Intergenic,1.0
+chrXIV	 377205	 A	 G	KRE33	629.0	Non	Serine-->Glycine,0.954545454545
+chrXIV	 465145	 C	 A	TCB2	912.0	Non	Threonine-->Lysine,1.0
+LK2-D09_clone-4_sc_CGTACTAG-AAGGAGTA
+chrXII	 582915	 C	 -1:T	IFH1	859.0	Non	FS,0.904761904762
+LK2-D09_clone-4_ypd_CGTACTAG-ATCGCGCC
+chrV	 24218	 A	 G	Intergenic,1.0
+LK2-E07_clone-1_sc_AGGCAGAA-AAGGAGTA
+chrVII	 651216	 A	 T	Intergenic,1.0
+chrXV	 1014252	 C	 +1:A	PDE2	190.0	Non	FS,0.925
+chrXVI	 316489	 G	 T	Intergenic,1.0
+LK2-E07_clone-1_ypd_AGGCAGAA-ATCGCGCC
+chrIV	 992351	 G	 T	Intergenic,0.666666666667
+chrIV	 992352	 T	 C	Intergenic,0.666666666667
+LK2-E07_clone-2_sc_TCCTGAGC-AAGGAGTA
+chrII	 519970	 A	 C	IRA1	2220.0	Non	Valine-->Glycine,1.0
+chrXVI	 917735	 T	 A	RPC82	436.0	Non	Glutamic	acid-->Valine,0.545454545455
+LK2-E07_clone-2_ypd_TCCTGAGC-ATCGCGCC
+chrIII	 43685	 G	 C	POF1	251.0	Non	Isoleucine-->Methionine,1.0
+LK2-E07_clone-3_ypd_GGACTCCT-ATCGCGCC
+LK2-E07_clone-4_sc_TAGGCATG-AAGGAGTA
+chrXV	 1014153	 C	 A	PDE2	223.0	Non	Leucine-->Phenylalanine,1.0
+LK2-E07_clone-4_ypd_TAGGCATG-ATCGCGCC
+chrVI	 187412	 A	 G	FAB1	971.0	Non	Isoleucine-->Valine,1.0
+LK2-E08_clone-1_sc_CTCTCTAC-AAGGAGTA
+chrI	 124611	 A	 G	Intergenic,0.857142857143
+chrX	 358588	 G	 A	GYP6	363.0	Syn,0.75
+chrX	 502119	 C	 T	HUL4	425.0	Non	Alanine-->Threonine,0.588235294118
+chrXI	 608309	 C	 A	TGL4	19.0	Syn,1.0
+chrXIII	 55826	 A	 +1:T	PML39	148.0	Non	FS,0.769230769231
+chrXIII	 848140	 C	 G	HSH155	857.0	Non	Alanine-->Glycine,0.625
+chrXV	 205208	 C	 T	INP54	226.0	Syn,0.736842105263
+chrXV	 863276	 C	 G	YPK9	701.0	Non	Serine-->Stop,0.636363636364
+chrXVI	 141947	 C	 T	BMS1	409.0	Non	Glutamic	acid-->Lysine,0.666666666667
+LK2-E08_clone-1_ypd_CTCTCTAC-ATCGCGCC
+chrXVI	 377798	 C	 A	RPS6A	66.0	Non	Leucine-->Phenylalanine,1.0
+LK2-E08_clone-2_sc_CAGAGAGG-AAGGAGTA
+chrVII	 782720	 C	 A	ENP2	318.0	Non	Asparagine-->Lysine,1.0
+chrXII	 681277	 C	 A	DCS1	31.0	Non	Serine-->Tyrosine,1.0
+chrXV	 277812	 T	 A	Intergenic,1.0
+chrXV	 843869	 G	 T	RFM1	254.0	Syn,1.0
+chrXV	 865322	 C	 +1:A	YPK9	1383.0	Non	FS,1.0
+LK2-E08_clone-2_ypd_CAGAGAGG-ATCGCGCC
+chrIII	 210777	 C	 A	BUD23	257.0	Non	Glycine-->Tryptophan,1.0
+LK2-E08_clone-3_sc_GCTACGCT-AAGGAGTA
+chrV	 344870	 G	 A	TSC11	915.0	Syn,1.0
+chrVII	 179579	 G	 C	XRN1	179.0	Non	Histidine-->Aspartic	acid,1.0
+chrVII	 782128	 G	 C	ENP2	121.0	Non	Arginine-->Threonine,1.0
+chrVIII	 181339	 G	 C	BRL1	332.0	Non	Arginine-->Threonine,1.0
+LK2-E08_clone-3_ypd_GCTACGCT-ATCGCGCC
+chrII	 89037	 C	 T	RPS8A	30.0	Non	Glycine-->Aspartic	acid,1.0
+chrVII	 782261	 G	 T	ENP2	165.0	Non	Leucine-->Phenylalanine,0.714285714286
+chrX	 354542	 T	 G	Intergenic,0.733333333333
+chrX	 354546	 G	 A	Intergenic,0.733333333333
+LK2-E08_clone-4_sc_CGAGGCTG-AAGGAGTA
+chrII	 345994	 C	 T	PRP6	436.0	Syn,0.939393939394
+chrIV	 1067781	 C	 T	GPI11	17.0	Syn,0.961538461538
+chrVI	 161884	 T	 C	Intergenic,0.625
+chrVI	 161885	 A	 G	Intergenic,0.625
+chrVII	 931833	 A	 G	Intergenic,0.56
+chrVII	 931834	 T	 C	Intergenic,0.56
+chrVII	 931861	 T	 G	Intergenic,0.571428571429
+chrXII	 939545	 G	 A	VIP1	669.0	Non	Aspartic	acid-->Asparagine,1.0
+chrXIII	 525267	 C	 A	ECM16	524.0	Non	Asparagine-->Lysine,1.0
+LK2-E08_clone-4_ypd_CGAGGCTG-ATCGCGCC
+chrII	 81320	 T	 C	YBL077W	142.0	Non	Serine-->Proline,1.0
+chrXIV	 376507	 T	 G	KRE33	396.0	Non	Isoleucine-->Serine,1.0
+chrXVI	 397685	 G	 T	SEN54	141.0	Non	Leucine-->Isoleucine,1.0
+chrXVI	 599262	 C	 G	MCM4	838.0	Non	Threonine-->Arginine,1.0
+LK5-F05_clone-1_ypd_CGTACTAG-TAGATCGC
+chrVII	 782712	 G	 A	ENP2	316.0	Non	Aspartic	acid-->Asparagine,1.0
+LK5-F05_clone-2_sc_TCCTGAGC-CCTCAGAC
+chrVII	 782475	 C	 A	ENP2	237.0	Non	Arginine-->Serine,1.0
+chrVIII	 250896	 C	 T	Intergenic,1.0
+LK5-F05_clone-2_ypd_TCCTGAGC-TAGATCGC
+chrI	 62510	 G	 T	ERV46	399.0	Non	Aspartic	acid-->Tyrosine,1.0
+chrXII	 659744	 T	 A	YLR257W	307.0	Non	Tyrosine-->Asparagine,1.0
+LK5-F05_clone-3_sc_GGACTCCT-CCTCAGAC
+chrIV	 148348	 C	 A	PAR32	53.0	Non	Alanine-->Glutamic	acid,1.0
+chrIV	 1060883	 C	 A	BFR2	419.0	Non	Asparagine-->Lysine,1.0
+chrXII	 229879	 T	 G	Intergenic,1.0
+LK5-F05_clone-3_ypd_GGACTCCT-TAGATCGC
+chrI	 74824	 A	 T	Intergenic,1.0
+chrXVI	 141918	 C	 A	BMS1	418.0	Non	Leucine-->Phenylalanine,1.0
+LK5-F05_clone-4_sc_TAGGCATG-CCTCAGAC
+chrIV	 377629	 C	 T	SIR2	273.0	Non	Aspartic	acid-->Asparagine,0.6
+chrVIII	 483784	 G	 T	GPI16	18.0	Non	Phenylalanine-->Leucine,1.0
+chrXIV	 377236	 C	 T	KRE33	639.0	Non	Alanine-->Valine,1.0
+chrXV	 918705	 A	 G	LDB19	786.0	Syn,1.0
+LK5-F05_clone-4_ypd_TAGGCATG-TAGATCGC
+chrXVI	 68019	 A	 T	BBP1	99.0	Non	Isoleucine-->Phenylalanine,1.0
+chrXVI	 141952	 A	 G	BMS1	407.0	Non	Isoleucine-->Threonine,1.0
+LK5-F06_clone-1_sc_CTCTCTAC-CCTCAGAC
+LK5-F06_clone-1_ypd_CTCTCTAC-TAGATCGC
+chrV	 566911	 A	 G	Intergenic,1.0
+chrV	 566930	 T	 A	Intergenic,1.0
+LK5-F06_clone-2_sc_CAGAGAGG-CCTCAGAC
+LK5-F06_clone-2_ypd_CAGAGAGG-TAGATCGC
+LK5-F06_clone-3_sc_GCTACGCT-CCTCAGAC
+chrIV	 507395	 T	 G	Intergenic,1.0
+LK5-F06_clone-3_ypd_GCTACGCT-TAGATCGC
+chrVII	 574607	 T	 C	Intergenic,1.0
+chrXI	 458345	 A	 T	Intergenic,1.0
+LK5-F06_clone-4_sc_CGAGGCTG-CCTCAGAC
+LK5-F06_clone-4_ypd_CGAGGCTG-TAGATCGC
+LK5-F07_clone-1_ypd_AAGAGGCA-CTAAGCCT
+chrXVI	 569396	 T	 C	REC8	661.0	Syn,1.0
+LK5-F07_clone-2_sc_AGGCAGAA-CCTCAGAC
+chrI	 168130	 C	 T	BUD14	248.0	Non	Aspartic	acid-->Asparagine,1.0
+chrIV	 377628	 T	 A	SIR2	273.0	Non	Aspartic	acid-->Valine,0.914893617021
+chrVII	 634262	 C	 T	Intergenic,1.0
+chrIX	 103328	 G	 A	ASG1	183.0	Non	Aspartic	acid-->Asparagine,0.888888888889
+chrXIV	 193151	 A	 C	ATG2	610.0	Non	Lysine-->Glutamine,1.0
+LK5-F07_clone-2_ypd_GTAGAGGA-CTAAGCCT
+chrXVI	 887047	 C	 T	VPS4	264.0	Non	Glycine-->Glutamic	acid,1.0
+LK5-F07_clone-3_sc_TAAGGCGA-TCCTTACG
+chrIV	 499170	 A	 G	REG1	570.0	Syn,0.645569620253
+chrXII	 1018401	 C	 T	RPS1A	170.0	Non	Glutamic	acid-->Lysine,0.625
+chrXII	 1020831	 T	 +2:TA	SIR3	474.0	Non	FS,0.604651162791
+chrXII	 1020839	 C	 A	SIR3	471.0	Non	Leucine-->Phenylalanine,0.609756097561
+chrXV	 448450	 A	 C	Intergenic,0.923076923077
+LK5-F07_clone-3_ypd_TAAGGCGA-CTAAGCCT
+chrIV	 1009844	 C	 T	Intergenic,0.545454545455
+LK5-F07_clone-4_sc_CGTACTAG-TCCTTACG
+chrIV	 1279506	 G	 A	PDR15	99.0	Syn,1.0
+chrV	 58029	 G	 T	AFG1	487.0	Non	Alanine-->Serine,1.0
+chrVIII	 529271	 A	 T	Intergenic,1.0
+chrIX	 65748	 C	 T	MLP2	774.0	Non	Glycine-->Serine,1.0
+chrXI	 129484	 A	 T	NNK1	670.0	Non	Glutamic	acid-->Aspartic	acid,1.0
+chrXII	 1021353	 G	 T	SIR3	300.0	Non	Serine-->Stop,1.0
+LK5-F07_clone-4_ypd_CGTACTAG-CTAAGCCT
+chrVII	 850101	 G	 A	ATF2	112.0	Syn,1.0
+LK5-F08_clone-1_sc_AGGCAGAA-TCCTTACG
+chrIII	 124221	 T	 C	Intergenic,0.75
+chrIV	 377871	 G	 T	SIR2	192.0	Non	Serine-->Stop,0.974358974359
+chrV	 391091	 C	 A	BOI2	874.0	Non	Glutamic	acid-->Aspartic	acid,1.0
+chrXII	 500210	 T	 A	UPS2	21.0	Non	Asparagine-->Tyrosine,1.0
+chrXII	 500211	 A	 G	UPS2	20.0	Syn,1.0
+chrXVI	 360465	 C	 T	ELP4	86.0	Non	Threonine-->Isoleucine,0.970588235294
+LK5-F08_clone-1_ypd_AGGCAGAA-CTAAGCCT
+chrII	 526497	 C	 A	IRA1	44.0	Non	Glutamic	acid-->Aspartic	acid,0.916666666667
+chrV	 502327	 C	 T	RAD4	190.0	Non	Glutamic	acid-->Lysine,1.0
+chrVII	 1011295	 G	 T	Intergenic,0.620689655172
+chrXII	 556317	 A	 G	ENT2	580.0	Syn,0.941176470588
+LK5-F08_clone-2_sc_TCCTGAGC-TCCTTACG
+chrII	 557438	 A	 C	AMN1	297.0	Non	Glutamine-->Proline,1.0
+chrIV	 274426	 G	 T	QRI7	151.0	Non	Leucine-->Methionine,1.0
+chrIV	 921634	 T	 -1:A	SIR4	1355.0	Non	FS,1.0
+chrVI	 270139	 T	 +1:G	Intergenic,0.833333333333
+chrXV	 1013596	 G	 C	PDE2	409.0	Non	Serine-->Stop,1.0
+LK5-F08_clone-2_ypd_TCCTGAGC-CTAAGCCT
+chrII	 680000	 A	 G	Intergenic,1.0
+chrVII	 79971	 G	 A	COG1	132.0	Non	Serine-->Leucine,1.0
+chrXV	 1013596	 G	 C	PDE2	409.0	Non	Serine-->Stop,1.0
+LK5-F08_clone-3_sc_GGACTCCT-TCCTTACG
+chrIII	 299050	 G	 T	Intergenic,0.967741935484
+chrXII	 1022094	 C	 A	SIR3	53.0	Non	Glycine-->Valine,0.846153846154
+chrXIII	 565253	 C	 A	NUP53	273.0	Non	Phenylalanine-->Leucine,0.826086956522
+chrXIII	 589946	 T	 A	Intergenic,0.666666666667
+LK5-F08_clone-3_ypd_GGACTCCT-CTAAGCCT
+chrXII	 1020354	 G	 A	SIR3	633.0	Non	Serine-->Phenylalanine,0.6
+chrXV	 111283	 T	 C	Intergenic,1.0
+LK5-F08_clone-4_sc_TAGGCATG-TCCTTACG
+chrI	 41196	 G	 A	GPB2	646.0	Syn,0.714285714286
+chrI	 41254	 A	 T	GPB2	666.0	Non	Lysine-->Stop,0.708333333333
+chrIV	 1300394	 C	 A	SYF1	655.0	Non	Leucine-->Isoleucine,0.555555555556
+chrV	 562493	 G	 A	YER186C	45.0	Non	Leucine-->Phenylalanine,0.727272727273
+chrVII	 560716	 C	 T	ORM1	12.0	Non	Alanine-->Valine,0.775
+chrVII	 632628	 T	 G	ENV11	479.0	Non	Tyrosine-->Serine,0.65625
+chrVIII	 445888	 C	 T	ATG7	59.0	Non	Proline-->Leucine,0.526315789474
+chrX	 477767	 G	 T	SGD:S000003788	1235.0	Syn,1.0
+chrX	 507641	 T	 -1:A	Intergenic,0.769230769231
+chrXII	 1020955	 C	 A	SIR3	433.0	Non	Glycine-->Stop,0.735294117647
+chrXIII	 677793	 G	 T	HFA1	1924.0	Non	Aspartic	acid-->Glutamic	acid,0.633333333333
+chrXIV	 485457	 T	 -1:A	Intergenic,0.636363636364
+chrXV	 567446	 C	 A	AFI1	705.0	Non	Aspartic	acid-->Tyrosine,0.666666666667
+LK5-F08_clone-4_ypd_TAGGCATG-CTAAGCCT
+chrII	 521464	 T	 -1:C	IRA1	1722.0	Non	FS,0.967741935484
+chrIV	 385663	 G	 -1:C	Intergenic,0.93023255814
+chrX	 172016	 A	 G	URA2	118.0	Non	Tyrosine-->Histidine,1.0
+chrXII	 851422	 T	 G	STE11	519.0	Non	Tyrosine-->Stop,1.0
+chrXIII	 372356	 G	 C	Intergenic,1.0
+chrXIV	 589379	 A	 G	FAP1	594.0	Syn,1.0
+LK5-F10_clone-1_sc_CTCTCTAC-TCCTTACG
+chrII	 525769	 G	 A	IRA1	287.0	Non	Threonine-->Isoleucine,1.0
+chrXII	 972711	 T	 C	ATG17	154.0	Non	Isoleucine-->Valine,0.65306122449
+chrXIV	 375514	 G	 A	KRE33	65.0	Non	Glycine-->Glutamic	acid,1.0
+chrXV	 317662	 A	 C	SIN3	242.0	Non	Tyrosine-->Serine,0.866666666667
+chrXVI	 538131	 T	 C	RQC2	269.0	Non	Glutamine-->Arginine,1.0
+LK5-F10_clone-1_ypd_CTCTCTAC-CTAAGCCT
+LK5-F10_clone-2_sc_CAGAGAGG-TCCTTACG
+chrXIII	 589475	 C	 A	MSS11	26.0	Non	Glycine-->Cysteine,1.0
+chrXIV	 376126	 C	 T	KRE33	269.0	Non	Alanine-->Valine,1.0
+LK5-F10_clone-2_ypd_CAGAGAGG-CTAAGCCT
+chrIV	 254	 C	 T	Intergenic,1.0
+chrXII	 696751	 C	 T	DBP9	27.0	Non	Arginine-->Histidine,0.875
+LK5-F10_clone-3_sc_GCTACGCT-TCCTTACG
+chrII	 521501	 C	 A	IRA1	1710.0	Non	Valine-->Phenylalanine,0.75
+chrIII	 102475	 C	 T	GBP2	295.0	Non	Arginine-->Histidine,1.0
+chrIV	 918730	 T	 G	SIR4	387.0	Non	Leucine-->Stop,1.0
+chrIV	 992826	 T	 A	Intergenic,1.0
+chrVI	 149313	 G	 A	LOC1	68.0	Syn,1.0
+chrVII	 349828	 T	 G	LCL3	71.0	Non	Phenylalanine-->Leucine,1.0
+chrIX	 170295	 C	 T	SHQ1	404.0	Non	Arginine-->Lysine,1.0
+chrXV	 176779	 C	 T	IRA2	1904.0	Non	Glutamine-->Stop,1.0
+chrXVI	 538464	 G	 A	RQC2	158.0	Non	Threonine-->Isoleucine,0.6
+LK5-F10_clone-3_ypd_GCTACGCT-CTAAGCCT
+chrXII	 1021515	 A	 +1:T	SIR3	246.0	Non	FS,0.875
+chrXIV	 377023	 T	 C	KRE33	568.0	Non	Leucine-->Serine,0.724137931034
+LK5-F10_clone-4_ypd_CGAGGCTG-CTAAGCCT
+chrII	 517516	 T	 -1:C	IRA1	3038.0	Non	FS,0.51724137931
+chrVII	 782476	 G	 A	ENP2	237.0	Non	Arginine-->Histidine,0.592592592593
+chrXI	 522431	 T	 C	UIP5	139.0	Syn,0.540540540541
+chrXV	 503437	 G	 A	Intergenic,0.545454545455
+LK5-G01_clone-1_sc_AAGAGGCA-TCCTTACG
+chrIV	 677466	 C	 A	FOB1	455.0	Non	Asparagine-->Lysine,1.0
+chrIV	 917828	 G	 -1:A	SIR4	86.0	Non	FS,0.916666666667
+chrVII	 782704	 C	 T	ENP2	313.0	Non	Proline-->Leucine,1.0
+chrVIII	 519578	 G	 A	CRG1	48.0	Non	Glycine-->Serine,1.0
+chrXV	 1245	 A	 G	YOL166C	32.0	Non	Serine-->Proline,1.0
+chrXV	 1253	 T	 C	YOL166C	29.0	Non	Aspartic	acid-->Glycine,1.0
+LK5-G01_clone-1_ypd_AAGAGGCA-TAGATCGC
+chrXI	 163719	 A	 G	YKL153W	40.0	Syn,1.0
+chrXIV	 708158	 G	 T	TRM112	124.0	Non	Glycine-->Valine,1.0
+LK5-G01_clone-2_ypd_GTAGAGGA-TAGATCGC
+chrIII	 127711	 A	 G	Intergenic,1.0
+chrVI	 166419	 C	 T	UBP6	451.0	Syn,0.65
+chrXIII	 525369	 G	 T	ECM16	558.0	Non	Methionine-->Isoleucine,1.0
+chrXV	 64661	 G	 T	RTC1	230.0	Non	Asparagine-->Lysine,1.0
+LK5-G01_clone-3_sc_TAAGGCGA-ACGCGTGG
+chrVII	 781923	 T	 G	ENP2	53.0	Non	Phenylalanine-->Valine,1.0
+chrXI	 458345	 A	 T	Intergenic,1.0
+chrXII	 1064893	 G	 C	Intergenic,0.727272727273
+chrXV	 64661	 G	 T	RTC1	230.0	Non	Asparagine-->Lysine,1.0
+chrXV	 197202	 A	 T	Intergenic,0.6
+LK5-G01_clone-3_ypd_TAAGGCGA-GGCTACTC
+chrIV	 53058	 G	 A	SHS1	205.0	Non	Serine-->Asparagine,1.0
+chrVII	 782179	 C	 A	ENP2	138.0	Non	Proline-->Histidine,1.0
+chrXIV	 711884	 G	 T	YNR048W	85.0	Non	Leucine-->Phenylalanine,1.0
+LK5-G01_clone-4_sc_CGTACTAG-ACGCGTGG
+chrIII	 258407	 G	 T	SRB8	1346.0	Non	Serine-->Isoleucine,1.0
+chrXII	 1021325	 T	 -1:G	SIR3	309.0	Non	FS,0.8
+chrXIV	 370989	 C	 T	EAF7	208.0	Non	Proline-->Serine,1.0
+chrXIV	 376434	 C	 T	KRE33	372.0	Non	Proline-->Serine,0.947368421053
+chrXV	 64661	 G	 T	RTC1	230.0	Non	Asparagine-->Lysine,1.0
+chrXV	 578233	 C	 T	Intergenic,0.952380952381
+chrXVI	 286152	 G	 C	Intergenic,1.0
+chrXVI	 832853	 G	 T	URN1	202.0	Syn,1.0
+LK5-G01_clone-4_ypd_CGTACTAG-GGCTACTC
+chrIV	 601053	 T	 C	SED1	87.0	Syn,0.6
+chrIV	 601057	 A	 C	SED1	89.0	Non	Isoleucine-->Leucine,0.6
+chrIV	 601059	 C	 T	SED1	89.0	Non	Isoleucine-->Leucine,0.6
+chrVII	 781813	 T	 G	ENP2	16.0	Non	Valine-->Glycine,0.545454545455
+chrVII	 934734	 T	 C	CRM1	732.0	Non	Tyrosine-->Histidine,1.0
+chrIX	 167799	 T	 A	SLM1	615.0	Non	Lysine-->Stop,0.631578947368
+chrXV	 373764	 A	 C	YOR022C	698.0	Non	Isoleucine-->Methionine,1.0
+LK5-G03_clone-1_ypd_AGGCAGAA-GGCTACTC
+chrV	 188761	 C	 G	BIM1	162.0	Non	Threonine-->Arginine,0.677419354839
+chrVII	 864960	 A	 -1:T	UBR1	265.0	Non	FS,0.735294117647
+chrXII	 935353	 A	 T	UTP21	627.0	Non	Asparagine-->Lysine,1.0
+chrXV	 573821	 T	 C	VPS17	216.0	Non	Valine-->Alanine,1.0
+chrXVI	 719139	 C	 A	Intergenic,0.658536585366
+LK5-G03_clone-2_sc_TCCTGAGC-ACGCGTGG
+chrXII	 1019367	 A	 T	SIR3	962.0	Non	Isoleucine-->Lysine,1.0
+chrXIV	 354434	 G	 T	YNL144C	203.0	Non	Serine-->Isoleucine,1.0
+chrXIV	 354435	 C	 A	YNL144C	203.0	Non	Serine-->Isoleucine,1.0
+chrXIV	 377328	 G	 A	KRE33	670.0	Non	Glutamic	acid-->Lysine,1.0
+chrXV	 724286	 C	 T	DED1	459.0	Non	Alanine-->Valine,1.0
+LK5-G03_clone-2_ypd_TCCTGAGC-GGCTACTC
+chrIV	 877562	 G	 A	Intergenic,0.896551724138
+chrIV	 877658	 A	 G	Intergenic,0.9
+chrX	 6319	 A	 T	Intergenic,0.983870967742
+chrXVI	 141940	 A	 G	BMS1	411.0	Non	Phenylalanine-->Serine,0.954545454545
+LK5-G03_clone-3_sc_GGACTCCT-ACGCGTGG
+chrIV	 920605	 T	 A	SIR4	1012.0	Non	Leucine-->Histidine,0.961538461538
+LK5-G03_clone-3_ypd_GGACTCCT-GGCTACTC
+chrVII	 902170	 G	 C	ELP2	34.0	Non	Alanine-->Glycine,1.0
+LK5-G03_clone-4_sc_TAGGCATG-ACGCGTGG
+chrII	 88996	 G	 A	RPS8A	44.0	Non	Histidine-->Tyrosine,1.0
+chrXII	 775858	 G	 C	MMS22	1307.0	Non	Aspartic	acid-->Histidine,1.0
+chrXIII	 627953	 C	 T	Intergenic,1.0
+LK5-G03_clone-4_ypd_TAGGCATG-GGCTACTC
+chrII	 555004	 C	 G	Intergenic,1.0
+chrVII	 1055107	 A	 C	YOR1	762.0	Syn,1.0
+chrXIV	 377577	 G	 T	KRE33	753.0	Non	Aspartic	acid-->Tyrosine,0.947368421053
+chrXV	 683689	 A	 G	Intergenic,1.0
+LK5-G09_clone-1_sc_CTCTCTAC-ACGCGTGG
+chrIX	 167512	 T	 A	Intergenic,1.0
+chrXII	 1021395	 G	 T	SIR3	286.0	Non	Serine-->Stop,1.0
+chrXVI	 151414	 C	 G	Intergenic,1.0
+chrXVI	 670815	 C	 G	SEC8	1047.0	Non	Threonine-->Serine,1.0
+LK5-G09_clone-1_ypd_CTCTCTAC-GGCTACTC
+chrXII	 506045	 T	 G	Intergenic,0.888888888889
+chrXV	 1013712	 C	 +2:AT	PDE2	370.0	Non	FS,0.807692307692
+LK5-G09_clone-2_sc_CAGAGAGG-ACGCGTGG
+LK5-G09_clone-2_ypd_CAGAGAGG-GGCTACTC
+chrII	 526497	 C	 G	IRA1	44.0	Non	Glutamic	acid-->Aspartic	acid,0.772727272727
+chrXIII	 122881	 G	 A	Intergenic,0.826086956522
+chrXIV	 55382	 G	 A	KRI1	172.0	Syn,0.75
+LK5-G09_clone-3_sc_GCTACGCT-ACGCGTGG
+chrVII	 258675	 C	 A	ITC1	323.0	Syn,0.571428571429
+chrVIII	 152171	 C	 A	MYO1	169.0	Non	Serine-->Tyrosine,0.75
+chrX	 87994	 G	 T	ATP12	189.0	Syn,0.583333333333
+chrXII	 240478	 C	 A	FRE8	310.0	Non	Arginine-->Serine,0.647058823529
+chrXV	 34687	 C	 A	ZPS1	10.0	Syn,0.545454545455
+LK5-G09_clone-3_ypd_GCTACGCT-GGCTACTC
+chrII	 517607	 G	 A	IRA1	3008.0	Non	Glutamine-->Stop,0.6
+chrIV	 645465	 A	 G	Intergenic,1.0
+chrIV	 645484	 T	 G	Intergenic,1.0
+chrVII	 218521	 A	 C	NUT1	333.0	Non	Glutamine-->Proline,0.666666666667
+chrVIII	 416902	 A	 C	KEL1	93.0	Non	Valine-->Glycine,0.571428571429
+LK5-G09_clone-4_sc_CGAGGCTG-ACGCGTGG
+chrII	 556461	 A	 G	Intergenic,1.0
+chrIII	 301705	 C	 T	YCR100C	173.0	Non	Alanine-->Threonine,0.923076923077
+chrIV	 378086	 T	 -1:G	SIR2	120.0	Non	FS,0.75
+chrVI	 64486	 T	 C	RPL22B	38.0	Syn,1.0
+chrVI	 136029	 T	 G	MSH4	377.0	Non	Lysine-->Glutamine,0.631578947368
+chrXVI	 794758	 C	 G	Intergenic,0.88
+LK5-G09_clone-4_ypd_CGAGGCTG-GGCTACTC
+chrVI	 251974	 G	 A	Intergenic,1.0
+chrXIII	 170418	 A	 C	SUR7	6.0	Non	Asparagine-->Threonine,0.888888888889
+chrXV	 1032678	 G	 T	GPB1	502.0	Non	Serine-->Stop,0.913043478261
+LK5-G11_clone-1_sc_AAGAGGCA-ACGCGTGG
+chrXII	 1020983	 G	 T	SIR3	423.0	Non	Tyrosine-->Stop,1.0
+chrXIII	 511660	 C	 A	Intergenic,1.0
+chrXIII	 653547	 G	 A	Intergenic,1.0
+LK5-G11_clone-1_ypd_AAGAGGCA-GGCTACTC
+chrIV	 1021778	 A	 C	Intergenic,0.869565217391
+chrXII	 702510	 G	 A	YLR278C	505.0	Syn,0.787878787879
+chrXIV	 349816	 G	 A	Intergenic,0.809523809524
+chrXVI	 718894	 T	 A	Intergenic,0.8
+LK5-G11_clone-2_ypd_GTAGAGGA-GGCTACTC
+chrII	 116370	 T	 C	YBL055C	154.0	Non	Asparagine-->Aspartic	acid,1.0
+chrXIII	 799580	 C	 T	RSN1	355.0	Non	Histidine-->Tyrosine,1.0
+LK5-G11_clone-3_sc_TAAGGCGA-GGAACTCC
+chrII	 473724	 C	 G	LYS2	68.0	Non	Arginine-->Threonine,1.0
+chrIII	 268639	 T	 C	FIG2	402.0	Syn,1.0
+chrVII	 642850	 G	 A	TWF1	281.0	Non	Valine-->Methionine,1.0
+chrXII	 1021720	 C	 A	SIR3	178.0	Non	Glutamic	acid-->Stop,1.0
+chrXIV	 656247	 A	 T	ACC1	1710.0	Non	Leucine-->Isoleucine,1.0
+chrXIV	 717650	 G	 A	BRE5	226.0	Syn,0.969696969697
+LK5-G11_clone-3_ypd_TAAGGCGA-CGCGGTTA
+chrX	 728697	 T	 G	THI11	300.0	Non	Glutamic	acid-->Aspartic	acid,0.911764705882
+LK5-G11_clone-4_ypd_CGTACTAG-CGCGGTTA
+chrXII	 851110	 G	 A	STE11	415.0	Non	Tryptophan-->Stop,0.9375
+LK5-H02_clone-1_sc_AGGCAGAA-GGAACTCC
+LK5-H02_clone-2_sc_TCCTGAGC-GGAACTCC
+chrII	 602974	 T	 G	GDT1	114.0	Non	Leucine-->Stop,0.90243902439
+chrIII	 219849	 C	 T	CTR86	73.0	Syn,0.758620689655
+chrIV	 321451	 A	 -1:T	RXT3	34.0	Non	FS,0.888888888889
+chrVII	 782033	 G	 T	ENP2	89.0	Non	Leucine-->Phenylalanine,1.0
+chrVII	 981863	 G	 T	SDA1	69.0	Non	Serine-->Tyrosine,0.848484848485
+chrXI	 211976	 G	 C	SSH4	462.0	Non	Valine-->Leucine,0.833333333333
+chrXII	 403813	 C	 T	ZRT2	84.0	Non	Alanine-->Threonine,0.90243902439
+LK5-H02_clone-2_ypd_TCCTGAGC-CGCGGTTA
+chrXIV	 377833	 A	 G	KRE33	838.0	Non	Aspartic	acid-->Glycine,1.0
+LK5-H02_clone-3_sc_GGACTCCT-GGAACTCC
+chrII	 89021	 G	 C	RPS8A	35.0	Non	Asparagine-->Lysine,1.0
+chrIV	 773836	 G	 A	SAC3	654.0	Non	Valine-->Isoleucine,1.0
+chrVII	 432815	 A	 T	MIG1	83.0	Non	Leucine-->Glutamine,0.652173913043
+chrXI	 85620	 C	 T	HYM1	306.0	Non	Proline-->Leucine,0.923076923077
+chrXV	 52677	 A	 G	CTR9	38.0	Syn,0.578947368421
+LK5-H02_clone-3_ypd_GGACTCCT-CGCGGTTA
+chrIV	 920214	 C	 T	SIR4	882.0	Non	Glutamine-->Stop,1.0
+chrVI	 87733	 C	 A	Intergenic,1.0
+LK5-H02_clone-4_sc_TAGGCATG-GGAACTCC
+chrIX	 34269	 C	 A	NIT1	140.0	Non	Alanine-->Serine,0.549019607843
+chrXVI	 705474	 G	 C	MDM36	207.0	Syn,0.528301886792
+LK5-H02_clone-4_ypd_TAGGCATG-CGCGGTTA
+LK5-H04_clone-1_sc_CTCTCTAC-GGAACTCC
+chrIV	 1060528	 T	 G	BFR2	301.0	Non	Valine-->Glycine,0.96
+chrIV	 1061159	 A	 -1:C	BFR2	511.0	Non	FS,0.913043478261
+chrIV	 1084241	 C	 T	SUM1	26.0	Non	Valine-->Isoleucine,1.0
+chrIV	 1256336	 G	 A	UBA2	171.0	Non	Proline-->Leucine,1.0
+chrVIII	 85692	 G	 T	Intergenic,1.0
+chrXIV	 319084	 G	 A	Intergenic,1.0
+LK5-H04_clone-1_ypd_CTCTCTAC-CGCGGTTA
+chrIV	 920127	 A	 G	SIR4	853.0	Non	Serine-->Glycine,0.789473684211
+LK5-H04_clone-2_sc_CAGAGAGG-GGAACTCC
+chrIV	 188599	 G	 A	NOP14	663.0	Non	Proline-->Leucine,1.0
+chrIV	 1060866	 T	 C	BFR2	414.0	Non	Tyrosine-->Histidine,1.0
+chrXI	 83536	 C	 T	CNB1	154.0	Non	Glutamine-->Stop,1.0
+chrXVI	 124470	 C	 A	NEW1	902.0	Non	Glutamine-->Lysine,0.903225806452
+chrXVI	 141907	 C	 A	BMS1	422.0	Non	Glycine-->Valine,0.851851851852
+LK5-H04_clone-2_ypd_CAGAGAGG-CGCGGTTA
+chrI	 102913	 A	 G	LTE1	987.0	Non	Leucine-->Proline,1.0
+chrIV	 254	 C	 T	Intergenic,1.0
+chrIV	 992706	 A	 G	Intergenic,1.0
+chrIX	 144391	 C	 T	YIL115W-A	42.0	Non	Proline-->Serine,0.833333333333
+LK5-H04_clone-3_sc_GCTACGCT-GGAACTCC
+chrII	 756436	 A	 C	RIF1	224.0	Non	Leucine-->Tryptophan,0.695652173913
+chrIII	 295871	 C	 T	Intergenic,1.0
+chrVII	 779087	 T	 C	Intergenic,0.547619047619
+chrXV	 506532	 C	 G	RPS7A	65.0	Non	Proline-->Arginine,1.0
+chrXVI	 662498	 G	 C	ATG11	726.0	Non	Arginine-->Glycine,1.0
+LK5-H04_clone-3_ypd_GCTACGCT-CGCGGTTA
+chrV	 81478	 G	 A	RAD23	376.0	Non	Glutamine-->Stop,1.0
+chrVII	 402067	 T	 G	Intergenic,1.0
+chrIX	 310945	 G	 -1:T	Intergenic,0.965517241379
+chrXIV	 376358	 G	 T	KRE33	346.0	Syn,1.0
+chrXIV	 376359	 A	 T	KRE33	347.0	Non	Asparagine-->Tyrosine,1.0
+LK5-H04_clone-4_sc_CGAGGCTG-GGAACTCC
+chrIV	 921548	 T	 A	SIR4	1326.0	Non	Cysteine-->Stop,0.619047619048
+chrIV	 1061112	 G	 A	BFR2	496.0	Non	Glycine-->Arginine,1.0
+chrX	 174773	 G	 A	TRK1	845.0	Non	Alanine-->Valine,1.0
+chrXV	 409854	 T	 G	Intergenic,1.0
+LK5-H04_clone-4_ypd_CGAGGCTG-CGCGGTTA
+chrIV	 1061113	 G	 T	BFR2	496.0	Non	Glycine-->Valine,1.0
+LK5-H07_clone-1_sc_AAGAGGCA-GGAACTCC
+chrII	 519634	 G	 T	IRA1	2332.0	Non	Serine-->Stop,0.931034482759
+chrII	 703646	 G	 C	YBR241C	137.0	Non	Serine-->Cysteine,0.974358974359
+chrVI	 150170	 G	 C	NIC96	52.0	Non	Arginine-->Proline,1.0
+LK5-H07_clone-1_ypd_AAGAGGCA-CGCGGTTA
+chrII	 522538	 A	 +1:T	IRA1	1364.0	Non	FS,0.694444444444
+chrXVI	 321153	 G	 C	MEI5	160.0	Non	Glutamine-->Glutamic	acid,0.657894736842
+LK5-H07_clone-2_ypd_GTAGAGGA-CGCGGTTA
+chrII	 75624	 C	 A	NUP170	122.0	Non	Aspartic	acid-->Glutamic	acid,0.740740740741
+chrII	 520571	 A	 +1:T	IRA1	2020.0	Non	FS,0.777777777778
+chrXIII	 497101	 G	 C	YMR114C	117.0	Non	Proline-->Alanine,0.756756756757
+LK5-H07_clone-3_sc_TAAGGCGA-TGGCCATG
+chrII	 526556	 C	 +1:A	IRA1	25.0	Non	FS,1.0
+chrVII	 782720	 C	 A	ENP2	318.0	Non	Asparagine-->Lysine,1.0
+chrIX	 240398	 C	 A	RNR3	104.0	Non	Tryptophan-->Leucine,1.0
+chrXI	 340242	 T	 C	ASK1	102.0	Non	Glutamic	acid-->Glycine,1.0
+chrXIII	 438059	 T	 C	YMR085W	190.0	Non	Isoleucine-->Threonine,0.933333333333
+LK5-H07_clone-3_ypd_TAAGGCGA-GTCATTGA
+chrX	 321139	 T	 A	NUP82	375.0	Non	Valine-->Aspartic	acid,0.888888888889
+chrXV	 177614	 G	 T	IRA2	2182.0	Non	Arginine-->Leucine,0.769230769231
+LK5-H07_clone-4_sc_CGTACTAG-TGGCCATG
+chrII	 519409	 C	 T	IRA1	2407.0	Non	Tryptophan-->Stop,0.68
+chrV	 45424	 G	 T	YEL057C	100.0	Non	Histidine-->Asparagine,1.0
+chrVII	 475325	 A	 -1:T	Intergenic,0.931034482759
+chrVII	 802629	 G	 A	CHO2	64.0	Non	Alanine-->Threonine,0.733333333333
+chrXII	 115286	 G	 A	Intergenic,1.0
+chrXII	 1019807	 T	 A	SIR3	815.0	Non	Lysine-->Asparagine,0.571428571429
+chrXII	 1019812	 T	 A	SIR3	814.0	Non	Lysine-->Stop,0.545454545455
+chrXVI	 635063	 C	 G	SRO7	314.0	Non	Threonine-->Arginine,0.789473684211
+LK5-H07_clone-4_ypd_CGTACTAG-GTCATTGA
+chrIII	 249587	 C	 G	FUB1	153.0	Syn,1.0
+chrVII	 781843	 C	 G	ENP2	26.0	Non	Proline-->Arginine,1.0
+chrXV	 240244	 C	 T	RRT8	235.0	Non	Tryptophan-->Stop,1.0
+chrXVI	 868750	 G	 A	TIF3	402.0	Syn,1.0
+LK5-H08_clone-1_sc_AGGCAGAA-TGGCCATG
+chrVII	 401590	 T	 A	Intergenic,1.0
+chrXIII	 703118	 A	 T	GUA1	443.0	Non	Glutamine-->Histidine,0.521739130435
+LK5-H08_clone-1_ypd_AGGCAGAA-GTCATTGA
+chrIV	 986433	 G	 A	SGD:S000007397	1226.0	Syn,1.0
+LK5-H08_clone-2_sc_TCCTGAGC-TGGCCATG
+chrII	 523411	 G	 -1:T	IRA1	1073.0	Non	FS,0.52
+chrVII	 304848	 G	 A	RMD9	476.0	Non	Proline-->Serine,0.875
+chrX	 258496	 C	 A	SRS2	358.0	Non	Tyrosine-->Stop,0.785714285714
+chrX	 290265	 G	 C	PRY1	170.0	Non	Histidine-->Glutamine,0.866666666667
+chrXV	 896172	 G	 A	SNU66	72.0	Syn,0.620689655172
+LK5-H08_clone-2_ypd_TCCTGAGC-GTCATTGA
+LK5-H08_clone-3_sc_GGACTCCT-TGGCCATG
+chrII	 522826	 A	 T	IRA1	1268.0	Non	Isoleucine-->Asparagine,0.545454545455
+chrX	 633346	 A	 T	Intergenic,1.0
+LK5-H08_clone-4_sc_TAGGCATG-TGGCCATG
+chrVII	 736883	 C	 T	PPT1	441.0	Non	Valine-->Methionine,0.695652173913
+chrXII	 1022040	 A	 T	SIR3	71.0	Non	Isoleucine-->Asparagine,1.0
+chrXV	 1013906	 G	 T	PDE2	306.0	Non	Histidine-->Asparagine,1.0
+LK5-H12_clone-1_sc_CTCTCTAC-TGGCCATG
+chrVII	 782275	 G	 T	ENP2	170.0	Non	Glycine-->Valine,0.95
+chrVIII	 69308	 C	 T	APM2	81.0	Non	Alanine-->Threonine,1.0
+chrVIII	 556977	 T	 -1:G	YHR217C	22.0	Non	FS,0.808988764045
+LK5-H12_clone-1_ypd_CTCTCTAC-GTCATTGA
+LK5-H12_clone-2_sc_CAGAGAGG-TGGCCATG
+chrVIII	 227934	 C	 A	RRP3	368.0	Non	Lysine-->Asparagine,0.935483870968
+chrXIV	 375621	 C	 A	KRE33	101.0	Non	Glutamine-->Lysine,1.0
+chrXV	 327456	 G	 A	RRP6	209.0	Non	Aspartic	acid-->Asparagine,0.935483870968
+LK5-H12_clone-2_ypd_CAGAGAGG-GTCATTGA
+chrXIV	 378310	 T	 C	KRE33	997.0	Non	Isoleucine-->Threonine,1.0
+chrXV	 419454	 G	 C	RAT1	733.0	Non	Glutamine-->Glutamic	acid,1.0
+chrXV	 950817	 T	 G	KRE5	349.0	Non	Serine-->Alanine,1.0
+LK5-H12_clone-3_sc_GCTACGCT-TGGCCATG
+chrII	 88996	 G	 C	RPS8A	44.0	Non	Histidine-->Aspartic	acid,1.0
+chrIV	 1416717	 G	 A	PEX29	53.0	Non	Threonine-->Isoleucine,1.0
+chrVII	 325408	 A	 G	TOS8	26.0	Syn,0.875
+chrVIII	 297569	 T	 C	YHR097C	264.0	Non	Asparagine-->Serine,1.0
+chrXII	 1022064	 G	 T	SIR3	63.0	Non	Threonine-->Lysine,0.916666666667
+LK5-H12_clone-3_ypd_GCTACGCT-GTCATTGA
+LK5-H12_clone-4_sc_CGAGGCTG-TGGCCATG
+chrVIII	 402973	 C	 T	RTT107	3.0	Non	Threonine-->Isoleucine,0.95652173913
+chrXI	 141247	 G	 A	Intergenic,1.0
+chrXIV	 378304	 A	 C	KRE33	995.0	Non	Tyrosine-->Serine,1.0
+LK5-H12_clone-4_ypd_CGAGGCTG-GTCATTGA
+chrVIII	 130887	 G	 A	ARD1	187.0	Non	Alanine-->Valine,1.0
+LK6-A03_clone-1_sc_AAGAGGCA-TGGCCATG
+chrIV	 266058	 A	 -1:G	YDL109C	382.0	Non	FS,0.916666666667
+chrVII	 321747	 C	 A	Intergenic,0.62962962963
+chrVII	 781845	 G	 A	ENP2	27.0	Non	Aspartic	acid-->Asparagine,1.0
+chrXII	 791430	 C	 A	MID2	252.0	Non	Serine-->Stop,1.0
+LK6-A03_clone-1_ypd_AAGAGGCA-GTCATTGA
+chrIV	 593433	 T	 G	Intergenic,0.571428571429
+chrIV	 1240723	 C	 T	Intergenic,0.666666666667
+chrVII	 302140	 C	 T	CUE3	424.0	Syn,1.0
+chrXIII	 364422	 A	 -1:G	NUP116	762.0	Non	FS,0.785714285714
+LK6-A03_clone-2_sc_GTAGAGGA-TGGCCATG
+chrII	 177515	 A	 T	MCM2	4.0	Non	Asparagine-->Lysine,1.0
+chrIV	 70493	 T	 C	Intergenic,1.0
+chrIV	 210430	 G	 T	RPO21	44.0	Syn,0.880952380952
+chrIV	 919017	 C	 T	SIR4	483.0	Non	Glutamine-->Stop,1.0
+chrV	 122862	 G	 T	PMP2	23.0	Non	Alanine-->Aspartic	acid,1.0
+chrV	 336600	 G	 C	PTC2	247.0	Non	Aspartic	acid-->Glutamic	acid,1.0
+chrV	 478768	 C	 T	BEM2	1361.0	Non	Aspartic	acid-->Asparagine,0.941176470588
+chrVII	 782567	 C	 A	ENP2	267.0	Non	Aspartic	acid-->Glutamic	acid,1.0
+chrXII	 258409	 A	 G	SHM2	331.0	Syn,1.0
+chrXII	 522700	 T	 G	Intergenic,0.954545454545
+chrXII	 863000	 G	 A	ROM2	96.0	Non	Serine-->Asparagine,0.925
+chrXIV	 262300	 C	 A	PSY2	302.0	Non	Valine-->Leucine,1.0
+chrXIV	 452795	 C	 G	NST1	130.0	Non	Glutamine-->Glutamic	acid,0.947368421053
+chrXV	 991339	 C	 G	CIN1	517.0	Non	Serine-->Arginine,1.0
+chrXV	 1006539	 A	 C	GDS1	468.0	Non	Aspartic	acid-->Alanine,0.973684210526
+chrXVI	 98145	 C	 T	HSP82	161.0	Non	Aspartic	acid-->Asparagine,0.975
+LK6-A03_clone-2_ypd_GTAGAGGA-GTCATTGA
+chrIV	 148630	 C	 T	PAR32	147.0	Non	Serine-->Leucine,0.8
+LK6-A03_clone-3_sc_TAAGGCGA-GAGAGATT
+chrII	 230333	 G	 A	UTP20	900.0	Non	Glutamic	acid-->Lysine,1.0
+chrIV	 340916	 T	 A	Intergenic,1.0
+chrV	 297936	 A	 T	ARG5%2C6	843.0	Non	Isoleucine-->Phenylalanine,1.0
+chrVII	 782854	 T	 C	ENP2	363.0	Non	Leucine-->Serine,1.0
+chrX	 324363	 T	 +1:C	BNA3	326.0	Non	FS,0.833333333333
+chrXIII	 226294	 G	 C	RPS17A	2.0	Non	Arginine-->Threonine,1.0
+LK6-A03_clone-4_sc_CGTACTAG-GAGAGATT
+chrII	 268882	 C	 A	MNN2	208.0	Non	Glycine-->Cysteine,1.0
+chrIII	 303001	 A	 T	YCR101C	10.0	Syn,0.6
+chrIV	 173613	 G	 -1:A	STE7	378.0	Non	FS,1.0
+chrVII	 185735	 C	 A	Intergenic,1.0
+chrVII	 401607	 A	 G	Intergenic,1.0
+chrVII	 781821	 A	 C	ENP2	19.0	Non	Threonine-->Proline,0.727272727273
+chrX	 159977	 C	 T	Intergenic,0.6875
+chrXII	 30911	 C	 T	YCT1	268.0	Non	Serine-->Phenylalanine,1.0
+chrXII	 280447	 G	 A	YLR072W	529.0	Non	Cysteine-->Tyrosine,1.0
+chrXIV	 378276	 C	 G	KRE33	986.0	Non	Leucine-->Valine,1.0
+chrXV	 1066125	 C	 T	Intergenic,0.619047619048
+LK6-A03_clone-4_ypd_CGTACTAG-TCGGTTAA
+chrXII	 259862	 C	 G	REX2	229.0	Non	Tryptophan-->Serine,0.521739130435
+chrXIV	 377367	 A	 T	KRE33	683.0	Non	Serine-->Cysteine,0.545454545455
+chrXIV	 378063	 A	 G	KRE33	915.0	Non	Lysine-->Glutamic	acid,1.0
+LK6-A05_clone-1_sc_AGGCAGAA-GAGAGATT
+chrXV	 177434	 G	 A	IRA2	2122.0	Non	Glycine-->Aspartic	acid,0.916666666667
+LK6-A05_clone-1_ypd_AGGCAGAA-TCGGTTAA
+chrVIII	 147608	 A	 C	Intergenic,0.735849056604
+LK6-A05_clone-2_sc_TCCTGAGC-GAGAGATT
+chrXV	 944715	 C	 T	YOR333C	81.0	Syn,0.936170212766
+chrXV	 1033604	 C	 -1:T	GPB1	193.0	Non	FS,0.888888888889
+LK6-A05_clone-3_sc_GGACTCCT-GAGAGATT
+chrIV	 337762	 G	 A	UBC9	43.0	Non	Glycine-->Serine,1.0
+chrIV	 917843	 T	 A	SIR4	91.0	Non	Tyrosine-->Stop,1.0
+chrIV	 1241292	 C	 T	ATO3	247.0	Non	Cysteine-->Tyrosine,1.0
+chrV	 352389	 G	 A	SHC1	231.0	Non	Glycine-->Aspartic	acid,1.0
+chrV	 422532	 A	 G	Intergenic,0.666666666667
+chrX	 41522	 G	 T	LAA1	1971.0	Non	Serine-->Stop,0.954545454545
+chrX	 225901	 A	 G	SET4	283.0	Non	Arginine-->Glycine,0.769230769231
+chrXII	 750741	 C	 T	IMH1	343.0	Syn,1.0
+chrXIII	 786769	 G	 A	TRM732	705.0	Syn,1.0
+chrXIV	 117292	 A	 G	Intergenic,1.0
+chrXV	 1013484	 G	 T	PDE2	446.0	Non	Tyrosine-->Stop,1.0
+LK6-A05_clone-3_ypd_GGACTCCT-TCGGTTAA
+chrXVI	 215729	 A	 T	Intergenic,0.677419354839
+LK6-A05_clone-4_sc_TAGGCATG-GAGAGATT
+chrI	 40338	 T	 G	GPB2	360.0	Non	Tyrosine-->Stop,0.913043478261
+chrIV	 660953	 T	 C	STE5	868.0	Syn,0.852941176471
+chrXV	 881608	 A	 G	RAX1	215.0	Non	Glutamic	acid-->Glycine,0.958333333333
+LK6-A05_clone-4_ypd_TAGGCATG-TCGGTTAA
+chrIV	 116201	 T	 A	Intergenic,0.730769230769
+chrVII	 932002	 T	 A	Intergenic,0.666666666667
+chrVII	 932003	 C	 A	Intergenic,0.611111111111
+chrXVI	 215729	 A	 T	Intergenic,0.738095238095
+LK6-A07_clone-1_sc_CTCTCTAC-GAGAGATT
+chrIV	 424177	 G	 A	Intergenic,1.0
+chrIV	 921084	 G	 T	SIR4	1172.0	Non	Glycine-->Stop,1.0
+chrIV	 921085	 G	 A	SIR4	1172.0	Non	Glycine-->Stop,1.0
+chrIV	 921089	 T	 A	SIR4	1173.0	Non	Asparagine-->Lysine,1.0
+chrIV	 921093	 A	 G	SIR4	1175.0	Non	Lysine-->Glutamic	acid,1.0
+chrIX	 45733	 A	 G	BNR1	1303.0	Syn,1.0
+chrX	 257534	 G	 A	SRS2	38.0	Non	Glycine-->Serine,0.565217391304
+chrXIII	 755249	 C	 T	ZRC1	306.0	Syn,1.0
+chrXV	 1013923	 A	 G	PDE2	300.0	Non	Isoleucine-->Proline,1.0
+chrXV	 1013924	 T	 G	PDE2	300.0	Non	Isoleucine-->Proline,1.0
+chrXV	 1017917	 G	 A	PRE10	277.0	Non	Alanine-->Valine,0.695652173913
+LK6-A07_clone-1_ypd_CTCTCTAC-TCGGTTAA
+chrI	 103997	 T	 A	LTE1	626.0	Non	Serine-->Cysteine,1.0
+chrIV	 639071	 A	 -1:C	GIS1	645.0	Non	FS,0.909090909091
+chrXI	 590043	 C	 A	Intergenic,1.0
+chrXII	 54061	 C	 T	Intergenic,1.0
+chrXII	 125615	 G	 A	YEH1	28.0	Non	Valine-->Isoleucine,1.0
+chrXV	 178988	 T	 A	IRA2	2640.0	Non	Leucine-->Stop,1.0
+LK6-A07_clone-2_sc_CAGAGAGG-GAGAGATT
+chrIV	 249259	 G	 T	CYK3	227.0	Non	Aspartic	acid-->Tyrosine,0.8125
+chrIV	 343222	 A	 T	TSR1	535.0	Non	Lysine-->Isoleucine,0.909090909091
+chrV	 224178	 G	 A	ARB1	341.0	Non	Alanine-->Valine,0.823529411765
+chrVII	 736345	 C	 A	Intergenic,0.9
+chrX	 258488	 C	 T	SRS2	356.0	Non	Proline-->Serine,1.0
+chrXV	 177338	 A	 G	IRA2	2090.0	Non	Aspartic	acid-->Glycine,1.0
+LK6-A07_clone-2_ypd_CAGAGAGG-TCGGTTAA
+chrXV	 179239	 A	 C	IRA2	2724.0	Non	Threonine-->Proline,1.0
+LK6-A07_clone-3_sc_GCTACGCT-GAGAGATT
+chrIV	 920186	 C	 G	SIR4	872.0	Non	Tyrosine-->Stop,1.0
+chrIV	 1265507	 T	 A	SXM1	728.0	Non	Serine-->Arginine,1.0
+chrVII	 997334	 A	 T	GCN5	156.0	Non	Threonine-->Serine,1.0
+chrXV	 1013627	 C	 G	PDE2	399.0	Non	Alanine-->Proline,1.0
+LK6-A07_clone-3_ypd_GCTACGCT-TCGGTTAA
+chrII	 522538	 A	 +1:T	IRA1	1364.0	Non	FS,1.0
+chrVII	 224706	 T	 A	INO80	290.0	Non	Asparagine-->Tyrosine,1.0
+chrVII	 224808	 C	 T	INO80	256.0	Non	Glutamic	acid-->Lysine,1.0
+LK6-A07_clone-4_sc_CGAGGCTG-GAGAGATT
+chrII	 525695	 A	 G	IRA1	312.0	Non	Tyrosine-->Histidine,1.0
+chrV	 161986	 C	 A	YND1	479.0	Non	Phenylalanine-->Leucine,1.0
+chrXII	 1021967	 T	 G	SIR3	95.0	Non	Glutamic	acid-->Aspartic	acid,1.0
+LK6-A07_clone-4_ypd_CGAGGCTG-TCGGTTAA
+chrXV	 171605	 C	 A	IRA2	179.0	Non	Alanine-->Glutamic	acid,1.0
