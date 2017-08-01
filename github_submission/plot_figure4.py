@@ -1,183 +1,28 @@
-import numpy
-import sys
 import matplotlib.pylab as pt
-import matplotlib.cm
-import numpy.random
-import matplotlib.ticker as ticker
-from matplotlib.lines import Line2D
+import numpy
+import matplotlib.cm as cm
+
 import scipy.stats
+from matplotlib import colors
+
+import matplotlib
 
 matplotlib.rcParams['font.sans-serif'] = 'Arial'
-matplotlib.rcParams['font.size'] = 10.0
+matplotlib.rcParams['font.size'] = 8.0
 matplotlib.rcParams['lines.markeredgewidth'] = 0
-matplotlib.rcParams['lines.markersize'] = 3
-matplotlib.rcParams['lines.linewidth'] = 1
-matplotlib.rcParams['legend.fontsize'] = 8.0
-matplotlib.rcParams['axes.linewidth']=.5
-matplotlib.rcParams['patch.linewidth']=.5
+matplotlib.rcParams['lines.markersize'] = 3.5
+matplotlib.rcParams['lines.linewidth'] = .5
+matplotlib.rcParams['axes.linewidth']= .5
 
-def permute_within_categories(categories, cat_inds):
-	#categories: 1d array where each item has an index indicating which category it belongs to. The category indices need not be consecutive.
-	#cat_inds: list of category indices.
-	n = len(categories)
-	inds = numpy.arange(n) #Original order
-	
-	permuted_order = numpy.zeros((n,),dtype='int')
-	for i in range(len(cat_inds)):
-		
-		items_in_cat_unpermuted = inds[categories == cat_inds[i]]
-		permuted_order[items_in_cat_unpermuted] = numpy.random.permutation(items_in_cat_unpermuted)
-	
-	return permuted_order
-	
-def calculate_cat_inds(categories):
-	
-	categories = numpy.array(categories)		
-	return numpy.unique(categories)
-
-def calculate_helper_matrix(categories, cat_inds):
-	
-	#The helper matrix is a utility for quickly summing over specified rows in a table. It is intended to be matrix multiplied by the original mutation table; hence it is n_cats x n_pops
-	num_cats = len(cat_inds)
-	num_pops = len(categories)
-	helper_matrix = numpy.zeros((num_cats,num_pops))
-	
-	for i in range(num_cats):
-		specific_cat_inds = numpy.where(categories == cat_inds[i])
-		helper_matrix[i, specific_cat_inds] = 1
-	
-	return helper_matrix
-	
-def calculate_entropy_statistic(mutation_table, helper_matrix):
-	
-	muts_per_gene = numpy.sum(mutation_table, axis = 0)
-	
-	collapsed_table = numpy.dot(helper_matrix,mutation_table)
-	pops_per_category = numpy.dot(helper_matrix,helper_matrix.T)
-	#print pops_per_category
-	probs = numpy.dot(numpy.linalg.inv(pops_per_category),collapsed_table)
-	
-	num_genes = mutation_table.shape[1]
-	
-	entropies = numpy.zeros((num_genes,))
-	total_pops = numpy.float(numpy.sum(pops_per_category))
-	for i in range(num_genes):
-		nonzero_inds = numpy.all([probs[:,i] > 0 , probs[:,i]< 1], axis = 0)
-		nonzero_p_hit = probs[:,i][nonzero_inds]
-		nonzero_p_no_hit = 1. - nonzero_p_hit
-		pops_per_cat_temp = numpy.diag(pops_per_category)[nonzero_inds]
-		entropies[i] = numpy.sum(-1*pops_per_cat_temp/total_pops*(nonzero_p_hit*numpy.log2(nonzero_p_hit) + nonzero_p_no_hit*numpy.log2(nonzero_p_no_hit)))
-	
-	return numpy.sum(entropies)
-
-def calculate_entropy_statistic2(mutation_table, helper_matrix):
-	#This function can be used to weight double-hit mutations less than other mutations, since they carry less information.
-	#However, for this dataset including the 2-hit mutations with equal weight was equivalently sensitive.
-	muts_per_gene = numpy.sum(mutation_table, axis = 0)
-	
-	collapsed_table = numpy.dot(helper_matrix,mutation_table)
-	pops_per_category = numpy.dot(helper_matrix,helper_matrix.T)
-	probs = numpy.dot(numpy.linalg.inv(pops_per_category),collapsed_table) #probability that a population in this category got a mutation
-	#print probs
-	num_genes = mutation_table.shape[1]
-	
-	entropies = numpy.zeros((num_genes,))
-	weight = 1.
-	total_pops = numpy.float(numpy.sum(pops_per_category))
-	
-	for i in range(num_genes):
-		if muts_per_gene[i] > 2.1:
-			nonzero_inds = numpy.all([probs[:,i] > 0 , probs[:,i]< 1], axis = 0)
-			nonzero_p_hit = probs[:,i][nonzero_inds]
-			nonzero_p_no_hit = 1. - nonzero_p_hit
-			pops_per_cat_temp = numpy.diag(pops_per_category)[nonzero_inds]
-			
-			entropies[i] = numpy.sum(-1*pops_per_cat_temp/total_pops*(nonzero_p_hit*numpy.log2(nonzero_p_hit) + nonzero_p_no_hit*numpy.log2(nonzero_p_no_hit)))
-		else:
-			nonzero_inds = numpy.all([probs[:,i] > 0 , probs[:,i]< 1], axis = 0)
-			nonzero_p_hit = probs[:,i][nonzero_inds]
-			nonzero_p_no_hit = 1. - nonzero_p_hit
-			pops_per_cat_temp = numpy.diag(pops_per_category)[nonzero_inds]
-			entropies[i] = weight*numpy.sum(-1*pops_per_cat_temp/total_pops*(nonzero_p_hit*numpy.log2(nonzero_p_hit) + nonzero_p_no_hit*numpy.log2(nonzero_p_no_hit)))
-	return numpy.sum(entropies)
+##This script compares fitness increments for the same segregant in different environments.
+##It tests the hypothesis that segregants with low initial fitness in one condition but high initial fitness in the other
+##adapt more quickly in the environment where they had low initial fitness.
 
 
-
-#Read in the list of mutations that fixed in each population. Filter out snps that occur in multiple descendants of the same founder--these were SGV from the passaging of this segregant well.
-
-input_file = 'data/mutation_lists_with_aa_positions_reannotated.txt'
-
-#First loop to find any mutations that are shared among descendants of the same segregant
-
-file = open(input_file,'r')
-file_lines = file.readlines()
-file.close()
-
-segregant_mut_dict = {}
-common_mut_dict = {}
-for line in file_lines:
-	linelist = line.strip().split('\t')
-	if len(linelist) < 1.5:
-		#Go to the next clone
-		clone_name = linelist[0]
-		
-		segregant = clone_name.split('_')[0]
-		if segregant not in segregant_mut_dict:
-			segregant_mut_dict[segregant] = []
-		
-	else:
-		mutation = ('_').join(str(i) for i in linelist)
-		if len(linelist) > 5.5:
-			if linelist[6] == 'Non':
-				if mutation in segregant_mut_dict[segregant]:
-					print segregant, mutation
-					if segregant in common_mut_dict:
-						common_mut_dict[segregant].append(mutation)
-					else:
-						common_mut_dict[segregant] = [mutation]
-				if mutation not in segregant_mut_dict[segregant]:
-					
-					segregant_mut_dict[segregant].append(mutation)
-
-##Second loop to identify all de novo nonsynonymous mutations (and indels)
-
-gene_dict_by_sample = {}
-mutation_dict_by_sample = {}
-
-for line in file_lines:
-	
-	linelist = line.strip().split('\t')
-	
-	if len(linelist) < 1.5:
-		#Go to the next clone
-		clone_name = linelist[0]
-		gene_dict_by_sample[clone_name] = []
-		mutation_dict_by_sample[clone_name] = []
-		local_gene_names = []
-		segregant = clone_name.split('_')[0]
-		
-	else:
-		gene_name = linelist[4]
-		mutation = ('_').join(str(i) for i in linelist)
-		if len(linelist) > 5.5:
-			if linelist[6] == 'Non':
-				if segregant in common_mut_dict: #There might be shared ancestral snps
-				
-					if ((gene_name not in local_gene_names) and (len(gene_name) < 6.5) and (mutation not in common_mut_dict[segregant])): #We have not already counted this mutation, it is not an ancestral mutation, and it is not in a dubious ORF
-						local_gene_names.append(gene_name)
-						gene_dict_by_sample[clone_name].append(gene_name)
-						mutation_dict_by_sample[clone_name].append(mutation)
-				elif ((gene_name not in local_gene_names) and (len(gene_name) < 6.5)): #We have not already counted this mutation, it is not an ancestral mutation, and it is not in a dubious ORF
-					
-					local_gene_names.append(gene_name)
-					gene_dict_by_sample[clone_name].append(gene_name)
-					mutation_dict_by_sample[clone_name].append(mutation)
-
-##Import fitness and founder genotype data
-
+#Import fitness and genotype data
 filename1 = 'data/fitness_measurements_with_population_names_12_29_2016.csv'
 filename2 = 'data/control_replicate_measurements.csv'
-filename3 = 'data/segregant_genotypes_deduplicated_with_header.csv'
+filename3 = 'data/segregant_genotypes_deduplicated.csv'
 
 segregant_vector = []
 init_fits_ypd = []
@@ -187,10 +32,8 @@ init_std_errs_sc = []
 
 final_fits_ypd_pops_in_ypd = []
 segregant_vector_ypd_pops = []
-clone_vector_ypd_pops = []
 final_fits_sc_pops_in_sc = []
 segregant_vector_sc_pops = []
-clone_vector_sc_pops = []
 
 final_fits_sc_pops_in_ypd = []
 final_fits_ypd_pops_in_sc = []
@@ -210,19 +53,14 @@ for line in file1:
 	
 	ypd_evolved_pops = linestrs[5].split(',')
 	for entry in ypd_evolved_pops:
-		templist = entry.split()
 		segregant_vector_ypd_pops.append(linestrs[0])
-		clone_vector_ypd_pops.append(templist[0])
-		final_fits_ypd_pops_in_ypd.append(float(templist[1]))
-		final_fits_ypd_pops_in_sc.append(float(templist[2]))
-		
+		final_fits_ypd_pops_in_ypd.append(float(entry.split()[1]))
+		final_fits_ypd_pops_in_sc.append(float(entry.split()[2]))
 	sc_evolved_pops = linestrs[6].split(',')
 	for entry in sc_evolved_pops:
-		templist = entry.split()
 		segregant_vector_sc_pops.append(linestrs[0])
-		clone_vector_sc_pops.append(templist[0])
-		final_fits_sc_pops_in_ypd.append(float(templist[1]))
-		final_fits_sc_pops_in_sc.append(float(templist[2]))
+		final_fits_sc_pops_in_ypd.append(float(entry.split()[1]))
+		final_fits_sc_pops_in_sc.append(float(entry.split()[2]))
 
 file1.close()
 
@@ -257,11 +95,7 @@ for line in file2:
 file2.close()
 genotype_mat = []
 file3 = open(filename3,'r')
-firstline = 0
 for line in file3:
-	if firstline < .5:
-		firstline += 1
-		continue
 	linelist = line.strip().split(';')
 	genotype = [int(i) for i in linelist[1].split(',')]
 	genotype_mat.append(genotype)
@@ -338,158 +172,172 @@ delta_fits_ypd_std_errs = numpy.sqrt(delta_fits_ypd_vars/pops_per_seg_ypd)
 delta_fits_ypd_in_sc_vars = numpy.dot((delta_fits_ypd_in_sc - numpy.dot(helper_matrix_ypd_pops,delta_fits_ypd_in_sc_means))**2, helper_matrix_ypd_pops)/(pops_per_seg_ypd - 1.) + init_std_errs_sc**2
 delta_fits_ypd_in_sc_std_errs = numpy.sqrt(delta_fits_ypd_in_sc_vars/pops_per_seg_ypd)
 
-delta_fits_sc_in_ypd_vars = numpy.dot((delta_fits_sc_in_ypd - numpy.dot(helper_matrix_sc_pops,delta_fits_sc_in_ypd_means))**2, helper_matrix_sc_pops)/(pops_per_seg_sc - 1.) + init_std_errs_ypd**2 #- measurement_error_ypd
+delta_fits_sc_in_ypd_vars = numpy.dot((delta_fits_sc_in_ypd - numpy.dot(helper_matrix_sc_pops,delta_fits_sc_in_ypd_means))**2, helper_matrix_sc_pops)/(pops_per_seg_sc - 1.) + init_std_errs_ypd**2
 delta_fits_sc_in_ypd_std_errs = numpy.sqrt(delta_fits_sc_in_ypd_vars/pops_per_seg_sc)
-				
-####First calculation: number of nonsynonymous, genic mutations vs. fitness in each evolution condition
-clone_vector_sc_pops = numpy.array(clone_vector_sc_pops)
-clone_vector_ypd_pops = numpy.array(clone_vector_ypd_pops)
+
+###Find how far above or below the average initial fitness each segregant is in both environments
+
+init_fit_deviations_sc = (init_fits_sc - numpy.mean(init_fits_sc))/numpy.std(init_fits_sc)
+init_fit_deviations_ypd = (init_fits_ypd - numpy.mean(init_fits_ypd))/numpy.std(init_fits_ypd)
+
+###Find how far above or below the average fitness increment each segregant was in both environments (note this is calculated on the average fitness gains across pops descended from each segregant in both environments)
+
+delta_fit_deviations_sc = (delta_fits_sc_means - numpy.mean(delta_fits_sc_means))/numpy.std(delta_fits_sc_means)
+delta_fit_deviations_ypd = (delta_fits_ypd_means - numpy.mean(delta_fits_ypd_means))/numpy.std(delta_fits_ypd_means)
+
+###Propagate errors
+
+delta_fits_init_errs = numpy.sqrt( init_std_errs_sc**2/numpy.var(init_fits_sc) + init_std_errs_ypd**2/numpy.var(init_fits_ypd) )
+
+delta_fits_deviations_errs = numpy.sqrt( delta_fits_ypd_vars/(pops_per_seg_ypd*numpy.var(delta_fits_ypd_means)) + delta_fits_sc_vars/(pops_per_seg_sc*numpy.var(delta_fits_sc_means)) )
+
+##Calculate r^2 and bootstrap, including errors, to calculate significance
+
+r = scipy.stats.pearsonr(init_fit_deviations_sc - init_fit_deviations_ypd, delta_fit_deviations_sc - delta_fit_deviations_ypd)[0]
+
+init_diffs = init_fit_deviations_sc - init_fit_deviations_ypd
+delta_diffs = delta_fit_deviations_sc - delta_fit_deviations_ypd
+r_bs_list = []
+
+n_segs = len(init_diffs)
+
+for i in range(10000):
+	chosen_indices = numpy.random.randint(0,n_segs,size=n_segs)
+	init_diffs_bs = init_diffs[chosen_indices] + numpy.nanmean(delta_fits_init_errs)*numpy.random.randn(n_segs)
+	delta_diffs_bs = delta_diffs[chosen_indices] + numpy.nanmean(delta_fits_deviations_errs)*numpy.random.randn(n_segs)
+	r_bs = scipy.stats.pearsonr(init_diffs_bs, delta_diffs_bs)[0]
+	r_bs_list.append(r_bs)
+
+r_bs_list = numpy.array(r_bs_list)
+#print r_bs_list
+p_val = numpy.sum(r_bs_list > 0)/float(10000.)
+
+print p_val
+print r**2
+pt.figure()
+pt.hist(r_bs_list)
+pt.show()
+###Plot differences in these quantities
+
+fig, ax1 = pt.subplots(1,1,figsize=(4,4))
+
+ax1.errorbar(init_fit_deviations_sc - init_fit_deviations_ypd, delta_fit_deviations_sc - delta_fit_deviations_ypd, xerr= delta_fits_init_errs, yerr=delta_fits_deviations_errs, fmt='o', color= 'k', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+pt.xlabel('normalized init fit, HT - normalized init fit, OT')
+pt.ylabel('normalized delta fit, HT - normalized delta fit, OT')
+pt.savefig('delta_fitness_seg_by_seg_comparison.pdf',bbox_inches='tight')
+
+##Make some sanity check plots
+
+##Look at this for each Kre33 allele group separately.
+##Plot up the normalized initial fitnesses 
+
+fig, (ax1, ax2, ax3) = pt.subplots(1,3,figsize=(12,4))
+
+ax1.errorbar(init_fit_deviations_ypd[rm_allele], init_fit_deviations_sc[rm_allele],  yerr=(init_std_errs_sc**2/numpy.var(init_fits_sc))[rm_allele], xerr=(init_std_errs_ypd**2/numpy.var(init_fits_ypd))[rm_allele], fmt='o', color= 'Grey', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+ax1.plot([-2,2],[-2,2],'k')
+ax1.set_ylabel('Initial fitness at HT (normalized)',fontsize=12)
+ax1.set_xlabel('Initial fitness at OT (normalized)',fontsize=12)
+
+ax1.errorbar(init_fit_deviations_ypd[by_allele], init_fit_deviations_sc[by_allele],  yerr=(init_std_errs_sc**2/numpy.var(init_fits_sc))[by_allele], xerr=(init_std_errs_ypd**2/numpy.var(init_fits_ypd))[by_allele], fmt='o', color= 'Black', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+#ax1.axis('equal')
+
+ax2.errorbar(delta_fit_deviations_ypd[rm_allele], delta_fit_deviations_sc[rm_allele],  yerr=(delta_fits_sc_vars/(pops_per_seg_sc*numpy.var(delta_fits_sc_means)))[rm_allele], xerr=(delta_fits_ypd_vars/(pops_per_seg_ypd*numpy.var(delta_fits_ypd_means)))[rm_allele], fmt='o', color= 'Grey', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+ax2.errorbar(delta_fit_deviations_ypd[by_allele], delta_fit_deviations_sc[by_allele],  yerr=(delta_fits_sc_vars/(pops_per_seg_sc*numpy.var(delta_fits_sc_means)))[by_allele], xerr=(delta_fits_ypd_vars/(pops_per_seg_ypd*numpy.var(delta_fits_ypd_means)))[by_allele], fmt='o', color= 'Black', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+
+ax2.plot([-2,2],[-2,2],'k')
+ax2.set_ylabel('Fitness gain at HT (normalized)',fontsize=12)
+ax2.set_xlabel('Fitness gain at OT (normalized)', fontsize=12)
+#ax2.axis('equal')
+
+ax3.errorbar(init_fit_deviations_sc[rm_allele] - init_fit_deviations_ypd[rm_allele], delta_fit_deviations_sc[rm_allele] - delta_fit_deviations_ypd[rm_allele], xerr= delta_fits_init_errs[rm_allele], yerr=delta_fits_deviations_errs[rm_allele], fmt='o', color= 'Grey', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+ax3.errorbar(init_fit_deviations_sc[by_allele] - init_fit_deviations_ypd[by_allele], delta_fit_deviations_sc[by_allele] - delta_fit_deviations_ypd[by_allele], xerr= delta_fits_init_errs[by_allele], yerr=delta_fits_deviations_errs[by_allele], fmt='o', color= 'Black', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+#ax3.axis('equal')
+pt.xlabel('Initial fitness at HT - initial fitness at OT',fontsize=12)
+pt.ylabel('Fitness gain at HT - fitness gain at OT', fontsize=12)
+pt.savefig('delta_fitness_seg_by_seg_comparison2.pdf',bbox_inches='tight')
+
+##Normalize separately for the two Kre33 allele groups
+
+###Find how far above or below the average initial fitness each segregant is in both environments
+
+init_fit_deviations_sc_rm = (init_fits_sc[rm_allele] - numpy.mean(init_fits_sc[rm_allele]))/numpy.std(init_fits_sc[rm_allele])
+init_fit_deviations_ypd_rm = (init_fits_ypd[rm_allele] - numpy.mean(init_fits_ypd[rm_allele]))/numpy.std(init_fits_ypd[rm_allele])
+
+init_fit_deviations_sc_by = (init_fits_sc[by_allele] - numpy.mean(init_fits_sc[by_allele]))/numpy.std(init_fits_sc[by_allele])
+init_fit_deviations_ypd_by = (init_fits_ypd[by_allele] - numpy.mean(init_fits_ypd[by_allele]))/numpy.std(init_fits_ypd[by_allele])
+
+###Find how far above or below the average fitness increment each segregant was in both environments (note this is calculated on the average fitness gains across pops descended from each segregant in both environments)
+
+delta_fit_deviations_sc_rm = (delta_fits_sc_means[rm_allele] - numpy.mean(delta_fits_sc_means[rm_allele]))/numpy.std(delta_fits_sc_means[rm_allele])
+delta_fit_deviations_ypd_rm = (delta_fits_ypd_means[rm_allele] - numpy.mean(delta_fits_ypd_means[rm_allele]))/numpy.std(delta_fits_ypd_means[rm_allele])
+
+delta_fit_deviations_sc_by = (delta_fits_sc_means[by_allele] - numpy.mean(delta_fits_sc_means[by_allele]))/numpy.std(delta_fits_sc_means[by_allele])
+delta_fit_deviations_ypd_by = (delta_fits_ypd_means[by_allele] - numpy.mean(delta_fits_ypd_means[by_allele]))/numpy.std(delta_fits_ypd_means[by_allele])
+
+###Propagate errors
+
+delta_fits_init_errs_rm = numpy.sqrt( init_std_errs_sc[rm_allele]**2/numpy.var(init_fits_sc[rm_allele]) + init_std_errs_ypd[rm_allele]**2/numpy.var(init_fits_ypd[rm_allele]) )
+delta_fits_deviations_errs_rm = numpy.sqrt( delta_fits_ypd_vars[rm_allele]/(pops_per_seg_ypd[rm_allele]*numpy.var(delta_fits_ypd_means[rm_allele])) + delta_fits_sc_vars[rm_allele]/(pops_per_seg_sc[rm_allele]*numpy.var(delta_fits_sc_means[rm_allele])) )
+delta_fits_init_errs_by = numpy.sqrt( init_std_errs_sc[by_allele]**2/numpy.var(init_fits_sc[by_allele]) + init_std_errs_ypd[by_allele]**2/numpy.var(init_fits_ypd[by_allele]) )
+delta_fits_deviations_errs_by = numpy.sqrt( delta_fits_ypd_vars[by_allele]/(pops_per_seg_ypd[by_allele]*numpy.var(delta_fits_ypd_means[by_allele])) + delta_fits_sc_vars[by_allele]/(pops_per_seg_sc[by_allele]*numpy.var(delta_fits_sc_means[by_allele])) )
+
+fig, (ax1,ax2,ax3) = pt.subplots(1,3,figsize=(12,4))
+colors_rm = (init_fit_deviations_sc_rm - init_fit_deviations_ypd_rm) - numpy.min( init_fit_deviations_sc_rm - init_fit_deviations_ypd_rm )
+colors_by = (init_fit_deviations_sc_by - init_fit_deviations_ypd_by) - numpy.min( init_fit_deviations_sc_by - init_fit_deviations_ypd_by )
+
+cnorm_rm= colors_rm/numpy.max((numpy.max(colors_rm),numpy.max(colors_by)))
+cnorm_by= colors_by/numpy.max((numpy.max(colors_rm),numpy.max(colors_by)))
+
+ax1.scatter(init_fit_deviations_ypd_rm, init_fit_deviations_sc_rm, c = cnorm_rm, cmap='PRGn', edgecolors='Grey',linewidths=.5)
+ax1.plot([-2,2],[-2,2],'k')
+ax1.set_ylabel('Initial fitness at HT (normalized)',fontsize=12)
+ax1.set_xlabel('Initial fitness at OT (normalized)',fontsize=12)
+ax1.scatter(init_fit_deviations_ypd_by, init_fit_deviations_sc_by, c = cnorm_by, cmap='PRGn', edgecolors='Grey',linewidths=.5)
+# #ax1.axis('equal')
 
 
-clones_sc = [ i + '_' + j for [i,j] in numpy.stack((segregant_vector_sc_pops, clone_vector_sc_pops)).T]
-clones_ypd = [i + '_' + j for [i,j] in numpy.stack((segregant_vector_ypd_pops, clone_vector_ypd_pops)).T]
+# 
+ax2.scatter(delta_fit_deviations_ypd_rm, delta_fit_deviations_sc_rm, c = cnorm_rm, cmap='PRGn', edgecolors='Grey',linewidths=.5)
+ax2.scatter(delta_fit_deviations_ypd_by, delta_fit_deviations_sc_by, c = cnorm_by, cmap='PRGn', edgecolors='Grey',linewidths=.5)
+# 
+ax2.plot([-2,2],[-2,2],'k')
+ax2.set_ylabel('Fitness gain at HT (normalized)',fontsize=12)
+ax2.set_xlabel('Fitness gain at OT (normalized)', fontsize=12)
+# #ax2.axis('equal')
 
-num_muts_fit_array_sc = []
-num_muts_fit_array_ypd = []
-seg_list_sc_seq = []
-seg_list_ypd_seq = []
+ax3.errorbar(init_fit_deviations_sc_rm - init_fit_deviations_ypd_rm, delta_fit_deviations_sc_rm - delta_fit_deviations_ypd_rm, xerr= delta_fits_init_errs_rm, yerr=delta_fits_deviations_errs_rm, fmt='o', color= 'Black', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+ax3.errorbar(init_fit_deviations_sc_by - init_fit_deviations_ypd_by, delta_fit_deviations_sc_by - delta_fit_deviations_ypd_by, xerr= delta_fits_init_errs_by, yerr=delta_fits_deviations_errs_by, fmt='o', color= 'Black', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+init_fit_diffs_rm_by = numpy.concatenate((init_fit_deviations_sc_rm - init_fit_deviations_ypd_rm, init_fit_deviations_sc_by - init_fit_deviations_ypd_by), axis=0)
 
-num_muts_seg_dict_sc = {}
-num_muts_seg_dict_ypd = {}
+delta_fit_diffs_rm_by = numpy.concatenate((delta_fit_deviations_sc_rm - delta_fit_deviations_ypd_rm, delta_fit_deviations_sc_by - delta_fit_deviations_ypd_by), axis=0)
+r_rm_by = scipy.stats.pearsonr(init_fit_diffs_rm_by, delta_fit_diffs_rm_by)[0]
+#ax3.axis('equal')
+pt.xlabel('Initial fitness at HT - initial fitness at OT',fontsize=12)
+pt.ylabel('Fitness gain at HT - fitness gain at OT', fontsize=12)
+r2_rm_by = numpy.round(r_rm_by**2, 2)
+pt.text(.7,3,("").join(("$r^2=$",str(r2_rm_by))),fontsize=12)
+pt.savefig('delta_fitness_seg_by_seg_comparison_KRE33_control.pdf',bbox_inches='tight')
 
-for clone in gene_dict_by_sample:
-	name_strs = clone.split('_')
-	seg = name_strs[0]
-	evol_env = name_strs[2]
-	clone_num = name_strs[1]
-	seg_index = segregant_vector.index(seg)
-	full_name = seg + '_' + clone_num
-	
-	if seg not in num_muts_seg_dict_sc:
-		num_muts_seg_dict_sc[seg] = {}
-		num_muts_seg_dict_sc[seg]['init_fit'] = init_fits_sc[seg_index]
-		num_muts_seg_dict_sc[seg]['kre'] = rm_allele[seg_index]
-		num_muts_seg_dict_sc[seg]['num_muts'] = []
-	if seg not in num_muts_seg_dict_ypd:
-		num_muts_seg_dict_ypd[seg] = {}
-		num_muts_seg_dict_ypd[seg]['init_fit'] = init_fits_ypd[seg_index]
-		num_muts_seg_dict_ypd[seg]['kre'] = rm_allele[seg_index]
-		num_muts_seg_dict_ypd[seg]['num_muts'] = []
-	if (evol_env == 'sc' and full_name in clones_sc):
-		index_sc = clones_sc.index(full_name)
-		seg_list_sc_seq.append(seg)
-		
-	elif (evol_env == 'ypd' and full_name in clones_ypd):
-		index_ypd = clones_ypd.index(full_name)
-		seg_list_ypd_seq.append(seg)
+fig, (ax1,ax2,ax3) = pt.subplots(1,3,figsize=(12,4))
+###Now let's try to make a plot colored by y-x in panel A (i.e. normalized fitness at OT - normalized fitness at HT)
+colors = (init_fit_deviations_sc - init_fit_deviations_ypd) - numpy.min( init_fit_deviations_sc - init_fit_deviations_ypd )
+cnorm = colors/numpy.max(colors)
+print cnorm
+ax1.scatter(init_fit_deviations_ypd, init_fit_deviations_sc, c= cnorm, cmap='PRGn', edgecolors='Grey',linewidths=.5)#,capsize=0, elinewidth=.5)fmt='o', yerr=(init_std_errs_sc**2/numpy.var(init_fits_sc)), xerr=(init_std_errs_ypd**2/numpy.var(init_fits_ypd)),
+ax1.plot([-2,2],[-2,2],'k')
+ax1.set_ylabel('Initial fitness at HT (normalized)',fontsize=12)
+ax1.set_xlabel('Initial fitness at OT (normalized)',fontsize=12)
 
-	num_muts = len(gene_dict_by_sample[clone])
-	
-	if (evol_env == 'sc' and full_name in clones_sc):
-		num_muts_seg_dict_sc[seg]['num_muts'].append(num_muts)
-		num_muts_fit_array_sc.append([init_fits_sc[seg_index], delta_fits_sc[index_sc], num_muts, init_std_errs_sc[seg_index], rm_allele[seg_index]])
-	elif (evol_env == 'ypd' and full_name in clones_ypd):
-		num_muts_seg_dict_ypd[seg]['num_muts'].append(num_muts)
-		num_muts_fit_array_ypd.append([init_fits_ypd[seg_index], delta_fits_ypd[index_ypd], num_muts, init_std_errs_ypd[seg_index], rm_allele[seg_index]])
-	
-##To plot just the sequenced segregants:
+ax2.scatter(delta_fit_deviations_ypd, delta_fit_deviations_sc,  c= cnorm, cmap='PRGn', edgecolors='Grey', linewidths=.5)#,capsize=0, elinewidth=.5)yerr=(delta_fits_sc_vars/(pops_per_seg_sc*numpy.var(delta_fits_sc_means))), xerr=(delta_fits_ypd_vars/(pops_per_seg_ypd*numpy.var(delta_fits_ypd_means))), 
 
-num_muts_fit_array_sc = numpy.array(num_muts_fit_array_sc)
-num_muts_fit_array_ypd = numpy.array(num_muts_fit_array_ypd)
+ax2.plot([-2,2],[-2,2],'k')
+ax2.set_ylabel('Fitness gain at HT (normalized)',fontsize=12)
+ax2.set_xlabel('Fitness gain at OT (normalized)', fontsize=12)
 
-msc, bsc = numpy.polyfit(num_muts_fit_array_sc[:,0], num_muts_fit_array_sc[:,2], 1)
-mypd, bypd = numpy.polyfit(num_muts_fit_array_ypd[:,0], num_muts_fit_array_ypd[:,2], 1)
-
-r_sc, p_sc = scipy.stats.pearsonr(num_muts_fit_array_sc[:,0], num_muts_fit_array_sc[:,2])
-r_ypd, p_ypd = scipy.stats.pearsonr(num_muts_fit_array_ypd[:,0], num_muts_fit_array_ypd[:,2])
-
-print p_sc, p_ypd
-###
-
-fig, (ax1, ax2) = pt.subplots(1,2,figsize=(8,4))
-
-colors = ['brown','Tomato']
-for seg in num_muts_seg_dict_sc:
-	init_fit = num_muts_seg_dict_sc[seg]['init_fit']
-	num_muts = num_muts_seg_dict_sc[seg]['num_muts']
-	kre_status = num_muts_seg_dict_sc[seg]['kre']
-	color1 = colors[kre_status]
-	
-	offset = 0
-	for num in sorted(num_muts):
-		ax2.plot(init_fit, num + offset, 'o', color=color1, alpha=.9, markeredgewidth=0)
-		offset += .08
-	ax2.plot([init_fit,init_fit], [min(num_muts), max(num_muts) + offset - .08], color=color1,alpha=.9,linewidth=.5)
-
-
-ax2.set_ylim(-.5,13)
-
-ax2.set_xlim(-.2,.18)
-
-
-ax2.set_xlabel('Initial fitness, 37 C (%)')
-ax2.set_ylabel('Number of nonsynon. muts')
-
-#ax2.set_frame_on(False)
-ax2.set_axisbelow(True)
-ax2.get_xaxis().tick_bottom()
-ax2.get_yaxis().tick_left()
-ax2.tick_params(
-    axis='x',          # changes apply to the x-axis
-    which='both',      # both major and minor ticks are affected
-    bottom='on',      # ticks along the bottom edge are on
-    top='off',         # ticks along the top edge are off
-    labelbottom='on')
-xmin, xmax = ax2.get_xaxis().get_view_interval()
-ymin, ymax = ax2.get_yaxis().get_view_interval()
-#ax2.add_artist(Line2D((xmin, xmax), (ymin, ymin), color='black', linewidth=2))
-#ax2.add_artist(Line2D((xmin, xmin), (ymin, ymax), color='black', linewidth=2))
-
-
-ax2.set_xticks(numpy.arange(-.2,.19,.05))
-ax2.plot(numpy.arange(-.19,.18,.01), msc*numpy.arange(-.19,.18,.01) + bsc, 'k')
-ax2.set_xticklabels(numpy.arange(-20,19,5))
-ax2.text(.06,10,'$r^2=$' + str(round(r_sc**2,2)), fontsize=12)
-ax2.set_title('Evolved at 37 C')
-colors=['DarkSlateBlue','MediumSlateBlue']
-
-for seg in num_muts_seg_dict_ypd:
-	init_fit = num_muts_seg_dict_ypd[seg]['init_fit']
-	num_muts = num_muts_seg_dict_ypd[seg]['num_muts']
-	kre_status = num_muts_seg_dict_ypd[seg]['kre']
-	color1 = colors[kre_status]
-	
-	offset = 0
-	for num in sorted(num_muts):
-		ax1.plot(init_fit, num + offset, 'o', color=color1, alpha=.9, markeredgewidth=0)
-		offset += .08
-	ax1.plot([init_fit,init_fit], [min(num_muts), max(num_muts) + offset - .08], color=color1,alpha=.9,linewidth=.5)
-
-
-ax1.set_ylim(-.25,6)
-ax1.set_xlim(-.15,.1)
-
-#ax1.set_frame_on(False)
-ax1.set_axisbelow(True)
-ax1.get_xaxis().tick_bottom()
-ax1.get_yaxis().tick_left()
-ax1.tick_params(
-    axis='x',          # changes apply to the x-axis
-    which='both',      # both major and minor ticks are affected
-    bottom='on',      # ticks along the bottom edge are on
-    top='off',         # ticks along the top edge are off
-    labelbottom='on')
-xmin, xmax = ax1.get_xaxis().get_view_interval()
-ymin, ymax = ax1.get_yaxis().get_view_interval()
-#ax1.add_artist(Line2D((xmin, xmax), (ymin, ymin), color='black', linewidth=2))
-#ax1.add_artist(Line2D((xmin, xmin), (ymin, ymax), color='black', linewidth=2))
-
-
-ax1.set_xticks(numpy.arange(-.15,.11,.05))
-ax1.plot(numpy.arange(-.13,.1,.01), mypd*numpy.arange(-.13,.1,.01) + bypd, 'k')
-ax1.set_xticklabels(numpy.arange(-15,11,5))
-ax1.set_xlabel('Initial fitness, 30 C (%)')
-ax1.set_ylabel('Number of nonsynon. muts')
-ax1.set_title('Evolved at 30 C')
-ax1.text(.025,4.5,'$r^2=$' + str(round(r_ypd**2,2)), fontsize=12)
-pt.savefig('Init_fit_v_num_mut_1_9_2016.pdf',bbox_inches='tight')		
+ax3.errorbar(init_fit_deviations_sc - init_fit_deviations_ypd, delta_fit_deviations_sc - delta_fit_deviations_ypd, xerr= delta_fits_init_errs, yerr=delta_fits_deviations_errs, fmt='o', color= 'k', markeredgewidth=0,alpha=.9,capsize=0, elinewidth=.5)
+r2 = numpy.round(r**2, 2)
+pt.text(.5,2,("").join(("$r^2=$",str(r2))),fontsize=12)
+#ax3.axis('equal')
+pt.xlabel('Initial fitness at HT - initial fitness at OT',fontsize=12)
+pt.ylabel('Fitness gain at HT - fitness gain at OT', fontsize=12)
+pt.savefig('delta_fitness_seg_by_seg_comparison_colored.pdf',bbox_inches='tight')
